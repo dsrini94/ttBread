@@ -34,13 +34,13 @@ export default class CustomerInfo extends React.Component
   {
       if(value == 'bakery')
       {
-        var temp =( <Image src='./../../images/bak.jpg' size='huge'/>);
+        var temp =( <Image src='./../../images/bak.jpg' />);
         this.setState({map:temp,open:true,headding:'Map',icon:'world'})
       }
       else
       if(value == 'dc')
       {
-        var temp =( <Image src='./../../images/dc.jpg' size='huge'/>);
+        var temp =( <Image src='./../../images/dc.jpg' />);
         this.setState({map:temp,open:true,headding:'Map',icon:'world'})
       }
       else
@@ -53,7 +53,7 @@ export default class CustomerInfo extends React.Component
               <Image src='./../../images/temp.jpg' size="large"/>
               </Grid.Column>
               <Grid.Column width={8}>
-              <Image src='./../../images/temptable.jpg' size="large"/>
+              <Image src='./../../images/temptable.jpg' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -71,7 +71,7 @@ export default class CustomerInfo extends React.Component
               <Image src='./../../images/humid.jpg' size="large"/>
               </Grid.Column>
               <Grid.Column width={8}>
-              <Image src='./../../images/humidtable.jpg' size="large"/>
+              <Image src='./../../images/humidtable.jpg' />
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -235,7 +235,7 @@ export default class CustomerInfo extends React.Component
               {this.state.map}
             </Modal.Content>
             <Modal.Actions>
-              <Button basic color='red' inverted onClick={()=>{this.setState({open:false})}}>
+              <Button basic color='red' floated='left' style={{marginLeft:'150px'}} inverted onClick={()=>{this.setState({open:false})}}>
                 <Icon name='remove' /> close
               </Button>
             </Modal.Actions>

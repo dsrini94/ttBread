@@ -57,7 +57,7 @@ export default class OdcSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >DC Dispatch -  Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>6:30:00 PM</label>
+                <label className="headers" style={{fontSize:'20px'}}>2:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>

@@ -57,7 +57,7 @@ export default class RetailerSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Store Receiving -  Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>10:43:00 PM</label>
+                <label className="headers" style={{fontSize:'20px'}}>3:40:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>

@@ -55,28 +55,34 @@ export default class IdcSummary extends React.Component
 
           <Form.Field>
             <label >Vehicle</label>
-            <input defaultValue="CTF 276H"/>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>CTF 276H</label>
           </Form.Field>
 
-
+          <br/>
           <Form.Field>
             <label >DC Receiving -  Date </label>
-            <input type='date'/>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>01/07/2018</label>
           </Form.Field>
+          <br/>
 
             <Form.Field>
               <label >DC Receiving - Time</label>
-              <input defaultValue="12:30:00 PM" />
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>12:30:00 PM</label>
+
             </Form.Field>
+            <br/>
 
             <Form.Field>
               <label >Temp Recorded (Inbound)</label>
-              <input defaultValue="50°F (10°C)" />
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>50°F (10°C)</label>
+
             </Form.Field>
+            <br/>
 
             <Form.Field>
               <label >Temp Recorded (Inbound)</label>
-              <input defaultValue="60%" />
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>60%</label>
+
             </Form.Field>
           </Form>
           </Grid.Column>

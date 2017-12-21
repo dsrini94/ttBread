@@ -62,7 +62,7 @@ export default class Odc extends React.Component
 
             <Form.Field>
               <label >DC Dispatch - Time</label>
-              <input defaultValue="6:30:00 PM" />
+              <input defaultValue="2:30:00 PM" />
             </Form.Field>
 
             <Form.Field>

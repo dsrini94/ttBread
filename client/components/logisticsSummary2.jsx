@@ -55,7 +55,7 @@ export default class LogisticsSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Bakery Pick-up - Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>6:30:00 PM</label>
+                <label className="headers" style={{fontSize:'20px'}}>2:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -65,7 +65,7 @@ export default class LogisticsSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >DC Drop -  Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>10:43:00 PM</label>
+                <label className="headers" style={{fontSize:'20px'}}>3:40:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>

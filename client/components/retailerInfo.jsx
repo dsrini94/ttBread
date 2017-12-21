@@ -63,7 +63,7 @@ export default class RetailerInfo extends React.Component
 
             <Form.Field>
               <label >Store Receiving -  Time</label>
-              <input defaultValue="10:43:00 PM" />
+              <input defaultValue="3:40:00 PM" />
             </Form.Field>
 
             <Form.Field>

@@ -16,7 +16,7 @@ export default class DashBoard extends React.Component {
           <Grid.Column width={3}>
             <center>
               <Link to='/baker'>
-              <Image src='http://moziru.com/images/show-clipart-baker-13.jpg' circular style={{width:175,height:175}}/>
+              <Image src='./../../images/b.jpg' circular style={{width:175,height:175}}/>
               <Header><span className="headers">HP Bakers</span></Header>
               </Link>
             </center>

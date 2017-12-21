@@ -64,7 +64,7 @@ export default class LogisticInfo2 extends React.Component
 
             <Form.Field>
               <label >DC Pick-up - Time</label>
-              <input defaultValue="6:30:00 PM" />
+              <input defaultValue="2:30:00 PM" />
             </Form.Field>
 
             <Form.Field>
@@ -74,7 +74,7 @@ export default class LogisticInfo2 extends React.Component
 
             <Form.Field>
               <label >Store Drop -  Time</label>
-              <input defaultValue="10:43:00 PM" />
+              <input defaultValue="3:40:00 PM" />
             </Form.Field>
 
             <Form.Field>
