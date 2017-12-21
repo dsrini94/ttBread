@@ -1,0 +1,17 @@
+.lowerGrid{
+  background-color: rgb(235,235,235) ! important;
+
+}
+
+.heading{
+   text-align: center;
+}
+
+.headers{
+  font-family: 'Quicksand', sans-serif;
+ color:white;
+}
+
+.heroText{
+  font-family: 'Yesteryear', cursive;
+}
