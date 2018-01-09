@@ -29,6 +29,20 @@ export default class Customer extends React.Component {
 
   }
 
+  componentWillMount()
+  {
+    if(this.props.match.params.index==0)
+    {
+
+    }
+    else
+    this.setState({slidingIndex:this.props.match.params.index})
+  }
+
+  handleHome()
+  {
+    this.setState({slidingIndex:1})
+  }
   handleLogin()
   {
     this.setState({slidingIndex:(this.state.slidingIndex+1)})
@@ -60,7 +74,7 @@ export default class Customer extends React.Component {
           <Grid.Row>
             <Grid.Column width={2}/>
             <Grid.Column width={4} >
-              <Image src ='./../../images/rachel.jpg' style={{marginTop:'50px'}}/>
+              <Image src ='./../../images/rachel.jpg' style={{marginTop:'50px',borderRadius:'50%'}}/>
             </Grid.Column>
             <Grid.Column width={8}>
                 <SwipeableViews index={this.state.slidingIndex} >
@@ -68,7 +82,7 @@ export default class Customer extends React.Component {
                     <LogisticLogin handleLogin={this.handleLogin}/>
                   </div>
                   <div style={{overflow:'hidden'}}>
-                    < CustomerInfo />
+                    <CustomerInfo handleHome={this.handleHome}/>
                   </div>
                 </SwipeableViews>
             </Grid.Column>

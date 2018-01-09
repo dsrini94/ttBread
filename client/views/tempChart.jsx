@@ -313,12 +313,12 @@ export default class TempChart extends React.Component {
                 marginTop: '23px',
                 backgroundColor:'#a8eaed'
               }}>
-              <Icon name='line chart'/>
-              Graph
+              <Icon name='window maximize'/>
+              Table
             </Button>
           </Grid.Column>
           <Grid.Column width={2}>
-            <Button as={Link} to='/customer' style={{
+            <Button as={Link} to='/customer/1' style={{
                 marginTop: '23px',
                 backgroundColor:'#a8eaed'
               }}>
@@ -334,6 +334,14 @@ export default class TempChart extends React.Component {
           }}>
           <Grid.Column width={2}/>
           <Grid.Column width={12}>
+            <Line data={data} />
+          </Grid.Column>
+          <Grid.Column width={2}/>
+        </Grid.Row>
+
+        <Modal open={this.state.open} >
+          <Header icon='line chart' content='Temparature'/>
+          <Modal.Content>
           <Table inverted style={{backgroundColor:'#a8eaed',color:'black'}}>
             <Table.Header>
               <Table.Row >
@@ -346,14 +354,6 @@ export default class TempChart extends React.Component {
               {this.state.table}
             </Table.Body>
           </Table>
-          </Grid.Column>
-          <Grid.Column width={2}/>
-        </Grid.Row>
-
-        <Modal open={this.state.open} >
-          <Header icon='line chart' content='Temparature'/>
-          <Modal.Content>
-            <Line data={data} />
           </Modal.Content>
           <Modal.Actions>
             <Button color='red' onClick={()=>{this.setState({open:false})}}>

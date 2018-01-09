@@ -29,7 +29,7 @@ ReactDOM.render(<HashRouter>
         <Route exact path='/log2' component={LogisticsPartner2} />
         <Route exact path='/retailer' component={Retailer} />
         <Route exact path='/dc' component={DistributionCenter} />
-        <Route exact path='/customer' component={Customer} />
+        <Route exact path='/customer/:index' component={Customer} />
         <Route exact path='/temp' component={TempChart} />
         <Route exact path='/humid' component={HumidChart} />
         <Route exact path='/diagio' component={Diagio} />

@@ -97,28 +97,28 @@ export default class CustomerInfo extends React.Component
             <Grid.Column width={4}>
             <Form>
               <Form.Field>
-                <label style={{color:'brown'}}>Best Before Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'brown'}}>27th Jan, 2018</label>
+                <label style={{color:'green'}}>Best Before Date</label>
+                <label className="headers" style={{fontSize:'17px',color:'green'}}>27th Jan, 2018</label>
               </Form.Field>
               </Form>
             </Grid.Column>
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label style={{color:'brown'}}>Manufacturing Location Address</label>
-              <label className="headers" style={{fontSize:'17px',color:'brown'}}>100, ABC Street, 08540</label>
+              <label style={{color:'green'}}>Manufacturing Location Address</label>
+              <label className="headers" style={{fontSize:'17px',color:'green'}}>100, ABC Street, 08540</label>
             </Form.Field>
             </Form>
-            <span className='headers' style={{color:'green',fontWeight:'bold',fontSize:'10px'}}>Bread is produced locally</span>
+            <span className='headers' style={{color:'brown',fontWeight:'bold',fontSize:'10px'}}>Bread is produced locally</span>
             </Grid.Column>
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label style={{color:'brown'}}>Packing Date</label>
-              <label className="headers" style={{fontSize:'17px',color:'brown'}}>7th Jan, 2018</label>
+              <label style={{color:'green'}}>Packing Date</label>
+              <label className="headers" style={{fontSize:'17px',color:'green'}}>7th Jan, 2018</label>
             </Form.Field>
             </Form>
-            <span className='headers' style={{color:'green',fontWeight:'bold',fontSize:'10px'}}>Product is goood to consume</span>
+            <span className='headers' style={{color:'brown',fontWeight:'bold',fontSize:'10px'}}>Product is goood to consume</span>
             </Grid.Column>
           </Grid.Row>
 
