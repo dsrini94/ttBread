@@ -13,6 +13,8 @@ import {
   Button,
   Input
 } from 'semantic-ui-react';
+import {HashRouter, Route, Link} from 'react-router-dom';
+
 import Wheat from './wheat.jsx';
 import Milk from './milk.jsx';
 import Yeast from './yeast.jsx';
@@ -95,6 +97,36 @@ export default class CustomerInfo extends React.Component
             <Grid.Column width={4}>
             <Form>
               <Form.Field>
+                <label style={{color:'brown'}}>Best Before Date</label>
+                <label className="headers" style={{fontSize:'17px',color:'brown'}}>27th Jan, 2018</label>
+              </Form.Field>
+              </Form>
+            </Grid.Column>
+            <Grid.Column width={4}>
+            <Form>
+            <Form.Field>
+              <label style={{color:'brown'}}>Manufacturing Location Address</label>
+              <label className="headers" style={{fontSize:'17px',color:'brown'}}>100, ABC Street, 08540</label>
+            </Form.Field>
+            </Form>
+            <span className='headers' style={{color:'green',fontWeight:'bold',fontSize:'10px'}}>Bread is produced locally</span>
+            </Grid.Column>
+            <Grid.Column width={4}>
+            <Form>
+            <Form.Field>
+              <label style={{color:'brown'}}>Packing Date</label>
+              <label className="headers" style={{fontSize:'17px',color:'brown'}}>7th Jan, 2018</label>
+            </Form.Field>
+            </Form>
+            <span className='headers' style={{color:'green',fontWeight:'bold',fontSize:'10px'}}>Product is goood to consume</span>
+            </Grid.Column>
+          </Grid.Row>
+
+
+          <Grid.Row>
+            <Grid.Column width={4}>
+            <Form>
+              <Form.Field>
                 <label >Product ID</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>PROD524932</label>
               </Form.Field>
@@ -118,11 +150,7 @@ export default class CustomerInfo extends React.Component
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>Princeton, NJ</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Manufacturing Location Address</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>100, ABC Street, 08540</label>
-              </Form.Field>
-              <br/>
+
               <Form.Field>
                 <label >Storage Humidity</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>60-65% (Relative Humidity)</label>
@@ -136,20 +164,11 @@ export default class CustomerInfo extends React.Component
                 <label >Bake Date</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
               </Form.Field>
-              <br/>
-              <Form.Field>
-                <label >Packing Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
-              </Form.Field>
+
               </Form>
             </Grid.Column>
             <Grid.Column width={4}>
             <Form>
-              <Form.Field>
-                <label >Best Before Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>27th Jan, 2018</label>
-              </Form.Field>
-              <br/>
               <Form.Field>
                 <label >Net Quanity</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>400g/14.10oz</label>
@@ -212,7 +231,7 @@ export default class CustomerInfo extends React.Component
           <center><span className="headers" style={{color:'black'}}>Temparature</span>
           <br/>
           <br/>
-          <Button icon color="teal" style={{marginBottom:'5px'}} onClick={this.handleMapModal.bind(this,'temp')}>
+          <Button icon as={Link} to='/temp' color="teal" style={{marginBottom:'5px'}} >
             <Icon name='thermometer half' />
           </Button></center>
           </Grid.Column>
@@ -220,7 +239,7 @@ export default class CustomerInfo extends React.Component
             <center><span className="headers" style={{color:'black'}}>Humidity</span>
             <br/>
             <br/>
-            <Button icon color="teal" style={{marginBottom:'5px'}} onClick={this.handleMapModal.bind(this,'humidy')}>
+            <Button as={Link} to='/humid' icon color="teal" style={{marginBottom:'5px'}} >
               <Icon name='thermometer half' />
             </Button></center>
             </Grid.Column>

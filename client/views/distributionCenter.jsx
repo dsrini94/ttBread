@@ -9,7 +9,7 @@ import Idc from './../components/idc.jsx';
 import Odc from './../components/odc.jsx';
 import OdcSummary from './../components/odcSummary.jsx';
 import IdcSummary from './../components/idcSummary.jsx';
-
+import {HashRouter, Route, Link} from 'react-router-dom';
 
 
 export default class DistributionCenter extends React.Component
@@ -34,7 +34,7 @@ export default class DistributionCenter extends React.Component
       <center>
       <Icon name="thumbs up" size="huge" />
       <br/>
-        <p>Product Infromation Submitted Successfully</p>
+        <p>Product Information Submitted Successfully</p>
         <span className='headers' style={{color:'black'}}>Blockchain Address</span><br/>
         </center>
         <div style={{marginLeft:'25px'}}>
@@ -57,7 +57,7 @@ export default class DistributionCenter extends React.Component
       <center>
       <Icon name="thumbs up" size="huge" />
       <br/>
-        <p>Product Infromation Submitted Successfully</p>
+        <p>Product Information Submitted Successfully</p>
         </center>
           </div>
     )
@@ -133,7 +133,8 @@ export default class DistributionCenter extends React.Component
         <Grid.Row>
           <Grid.Column width={2} />
           <Grid.Column width={12}>
-            <Segment inverted color="brown"><Header style={{textAlign:'center'}}>
+            <Segment inverted color="brown">
+            <Header style={{textAlign:'center'}}>
               <span className="headers">Distribution Center</span>
             </Header></Segment>
           </Grid.Column>
@@ -145,7 +146,7 @@ export default class DistributionCenter extends React.Component
           <Grid.Column width={4} >
           <center>  <Header as='h1' style={{marginTop:'100px'}}><span className="headers" style={{color:'brown'}}>Distribution Center</span></Header></center>
             <br/>
-            <Image size='massive' src ='./../../images/dc.png' />
+            <Link to='/'><Image size='massive' src ='./../../images/dc.png' /></Link>
           </Grid.Column>
           <Grid.Column width={8}>
           <SwipeableViews index={this.state.slidingIndex}>

@@ -133,7 +133,7 @@ handleModal()
             <center>
             <Icon name="thumbs up" size="huge" />
             <br/>
-              <p>Product Infromation Submitted Successfully</p>
+              <p>Product Information Submitted Successfully</p>
               <p>Product ID PROD524932</p>
               <br/>
               <span className='headers' style={{color:'black'}}>Blockchain Address</span><br/>

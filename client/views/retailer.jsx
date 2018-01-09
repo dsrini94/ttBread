@@ -105,7 +105,7 @@ export default class Retailer extends React.Component
             <center>
             <Icon name="thumbs up" size="huge" />
             <br/>
-              <p>Product Infromation Submitted Successfully</p>
+              <p>Product Information Submitted Successfully</p>
               <span className='headers' style={{color:'black'}}>Blockchain Address</span><br/>
               </center>
               <div style={{marginLeft:'25px'}}>

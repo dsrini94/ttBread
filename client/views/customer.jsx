@@ -48,16 +48,8 @@ export default class Customer extends React.Component {
                   margin:'0px',
                   border:'none'
                 }}>
-                <span className="headers">Customer</span>
+                <span className="headers">Hello Rachel</span>
               </Header>
-              <List size='huge' style={{marginTop:'-35px',float:'right'}}>
-                <List.Item>
-                  <Image avatar="avatar" src='https://i2.wp.com/digitalinspiration.com/images/avatar-round-1.png?ssl=1'/>
-                  <List.Content style={{marginTop:'10px'}}>
-                    <List.Header><span className="headers">Helen</span></List.Header>
-                  </List.Content>
-                </List.Item>
-              </List>
             </Segment>
 
           </Grid.Column>
@@ -68,8 +60,7 @@ export default class Customer extends React.Component {
           <Grid.Row>
             <Grid.Column width={2}/>
             <Grid.Column width={4} >
-            <center>  <Header as='h1' style={{marginTop:'100px'}}><span className="headers" style={{color:'#00ffcc'}}>Customer</span></Header></center>
-              <Image src ='http://www.insidesoftwares.com/images/customer.png' />
+              <Image src ='./../../images/rachel.jpg' style={{marginTop:'50px'}}/>
             </Grid.Column>
             <Grid.Column width={8}>
                 <SwipeableViews index={this.state.slidingIndex} >

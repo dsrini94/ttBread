@@ -18,7 +18,7 @@ export default class OdcSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Shipment ID (Bakery - DC)</label>
+                <label >Shipment ID (DC - Store)</label>
                 <label className="headers" style={{fontSize:'20px'}}>HK4481N</label>
               </Form.Field>
               <br/>

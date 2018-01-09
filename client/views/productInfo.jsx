@@ -168,7 +168,7 @@ export default class ProductInfo extends React.Component {
           <Modal.Content>
           <center>
           <Icon name="thumbs up" size="huge" />
-            <p>Product Infromation Submitted Successfully</p>
+            <p>Product Information Submitted Successfully</p>
             </center>
           </Modal.Content>
           <Modal.Actions>
