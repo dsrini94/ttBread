@@ -29,7 +29,7 @@ export default class LogisticsInfo2 extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Food Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Logistics</label>
             </Form.Field>
             <br/>
 

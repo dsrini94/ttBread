@@ -24,7 +24,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>TimBrothers Food Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>TimBrothers Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
