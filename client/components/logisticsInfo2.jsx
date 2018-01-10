@@ -1,7 +1,7 @@
 import React from 'react';
 import {Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 'semantic-ui-react';
 
-export default class LogisticInfo2 extends React.Component
+export default class LogisticsInfo2 extends React.Component
 {
   render()
   {
@@ -28,7 +28,7 @@ export default class LogisticInfo2 extends React.Component
             <br/>
 
             <Form.Field>
-              <label >Logistic Partner Name</label>
+              <label >Logistics Partner Name</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Food Logistics</label>
             </Form.Field>
             <br/>

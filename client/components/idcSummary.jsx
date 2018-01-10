@@ -28,7 +28,7 @@ export default class IdcSummary extends React.Component
             <br/>
 
             <Form.Field>
-              <label >Logistic Partner Name</label>
+              <label >Logistics Partner Name</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>FoodHaul Logistics</label>
             </Form.Field>
             <br/>

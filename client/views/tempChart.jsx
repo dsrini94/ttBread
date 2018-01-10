@@ -187,11 +187,11 @@ export default class TempChart extends React.Component {
     var dummy=[],label=[],data=[];
     dummy.push(tempData.map((item,i)=>{
       label.push(item.Time);
-      data.push(item.Temparature);
+      data.push(item.Temperature);
       return(<Table.Row key={i}>
         <Table.Cell>{item.Time}</Table.Cell>
         <Table.Cell>{item.Location}</Table.Cell>
-        <Table.Cell>{item.Temparature}</Table.Cell>
+        <Table.Cell>{item.Temperature}</Table.Cell>
       </Table.Row>)
     }))
     this.setState({table:dummy,label:label,data:data})
@@ -218,12 +218,12 @@ export default class TempChart extends React.Component {
         if(item.time>this.state.startTime && item.time<this.state.endTime)
         {
           label.push(item.Time);
-          data.push(item.Temparature);
+          data.push(item.Temperature);
           return(
             <Table.Row key={i}>
             <Table.Cell>{item.Time}</Table.Cell>
             <Table.Cell>{item.Location}</Table.Cell>
-            <Table.Cell>{item.Temparature}</Table.Cell>
+            <Table.Cell>{item.Temperature}</Table.Cell>
           </Table.Row>);
         }
     }))
@@ -238,7 +238,7 @@ export default class TempChart extends React.Component {
       labels: this.state.label,
       datasets: [
         {
-          label: 'Temparature',
+          label: 'Temperature (Optimum Temperature is 50 °F)',
           fill: false,
           lineTension: 0.1,
           backgroundColor: '#a8eaed',
@@ -273,7 +273,7 @@ export default class TempChart extends React.Component {
               <Header style={{
                   textAlign: 'center'
                 }}>
-                <span className="headers" style={{color:'black'}}>Temparature</span>
+                <span className="headers" style={{color:'black'}}>Temperature</span>
               </Header>
             </Segment>
           </Grid.Column>
@@ -340,14 +340,14 @@ export default class TempChart extends React.Component {
         </Grid.Row>
 
         <Modal open={this.state.open} >
-          <Header icon='line chart' content='Temparature'/>
+          <Header icon='line chart' content='Temperature'/>
           <Modal.Content>
           <Table inverted style={{backgroundColor:'#a8eaed',color:'black'}}>
             <Table.Header>
               <Table.Row >
                 <Table.HeaderCell>Time</Table.HeaderCell>
                 <Table.HeaderCell>Location</Table.HeaderCell>
-                <Table.HeaderCell>Temparature</Table.HeaderCell>
+                <Table.HeaderCell>Temperature</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>

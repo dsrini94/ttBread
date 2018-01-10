@@ -21,7 +21,7 @@ import SwipeableViews from 'react-swipeable-views';
 import CreateInfo from '../components/createInfo.jsx'
 import ShippingInformation from '../components/shippingInformation.jsx'
 import Preview from '../components/preview.jsx';
-import Logistics1 from '../components/logistics1.jsx';
+import Logisticss1 from '../components/logistics1.jsx';
 
 
 export default class ProductInfo extends React.Component {

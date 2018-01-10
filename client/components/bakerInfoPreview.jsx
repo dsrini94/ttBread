@@ -56,7 +56,7 @@ export default class BakerInfoPreview extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Net Quanity</label>
+              <label >Net Quantity</label>
               <label className="headers" style={{fontSize:'20px'}}>400g/14.10oz</label>
             </Form.Field>
             <br/>

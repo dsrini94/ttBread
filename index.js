@@ -3550,19 +3550,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticLogin = function (_React$Component) {
-  _inherits(LogisticLogin, _React$Component);
+var LogisticsLogin = function (_React$Component) {
+  _inherits(LogisticsLogin, _React$Component);
 
-  function LogisticLogin(props) {
-    _classCallCheck(this, LogisticLogin);
+  function LogisticsLogin(props) {
+    _classCallCheck(this, LogisticsLogin);
 
-    var _this = _possibleConstructorReturn(this, (LogisticLogin.__proto__ || Object.getPrototypeOf(LogisticLogin)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (LogisticsLogin.__proto__ || Object.getPrototypeOf(LogisticsLogin)).call(this, props));
 
     _this.state = { active: false };
     return _this;
   }
 
-  _createClass(LogisticLogin, [{
+  _createClass(LogisticsLogin, [{
     key: 'handleSetTimeout',
     value: function handleSetTimeout() {
       var _this2 = this;
@@ -3637,10 +3637,10 @@ var LogisticLogin = function (_React$Component) {
     }
   }]);
 
-  return LogisticLogin;
+  return LogisticsLogin;
 }(_react2.default.Component);
 
-exports.default = LogisticLogin;
+exports.default = LogisticsLogin;
 
 /***/ }),
 /* 82 */
@@ -22524,16 +22524,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticInfo = function (_React$Component) {
-  _inherits(LogisticInfo, _React$Component);
+var LogisticsInfo = function (_React$Component) {
+  _inherits(LogisticsInfo, _React$Component);
 
-  function LogisticInfo() {
-    _classCallCheck(this, LogisticInfo);
+  function LogisticsInfo() {
+    _classCallCheck(this, LogisticsInfo);
 
-    return _possibleConstructorReturn(this, (LogisticInfo.__proto__ || Object.getPrototypeOf(LogisticInfo)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LogisticsInfo.__proto__ || Object.getPrototypeOf(LogisticsInfo)).apply(this, arguments));
   }
 
-  _createClass(LogisticInfo, [{
+  _createClass(LogisticsInfo, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -22601,12 +22601,12 @@ var LogisticInfo = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'FoodHaul Logistics'
+                  'FoodHaul Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -22725,10 +22725,10 @@ var LogisticInfo = function (_React$Component) {
     }
   }]);
 
-  return LogisticInfo;
+  return LogisticsInfo;
 }(_react2.default.Component);
 
-exports.default = LogisticInfo;
+exports.default = LogisticsInfo;
 
 /***/ }),
 /* 405 */
@@ -22757,16 +22757,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticsSummary = function (_React$Component) {
-  _inherits(LogisticsSummary, _React$Component);
+var LogisticssSummary = function (_React$Component) {
+  _inherits(LogisticssSummary, _React$Component);
 
-  function LogisticsSummary() {
-    _classCallCheck(this, LogisticsSummary);
+  function LogisticssSummary() {
+    _classCallCheck(this, LogisticssSummary);
 
-    return _possibleConstructorReturn(this, (LogisticsSummary.__proto__ || Object.getPrototypeOf(LogisticsSummary)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LogisticssSummary.__proto__ || Object.getPrototypeOf(LogisticssSummary)).apply(this, arguments));
   }
 
-  _createClass(LogisticsSummary, [{
+  _createClass(LogisticssSummary, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -22829,12 +22829,12 @@ var LogisticsSummary = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Logistic Partner Name'
+                    'Logistics Partner Name'
                   ),
                   _react2.default.createElement(
                     'label',
                     { className: 'headers', style: { fontSize: '20px' } },
-                    'FoodHaul Logistics'
+                    'FoodHaul Logisticss'
                   )
                 ),
                 _react2.default.createElement('br', null),
@@ -22989,10 +22989,10 @@ var LogisticsSummary = function (_React$Component) {
     }
   }]);
 
-  return LogisticsSummary;
+  return LogisticssSummary;
 }(_react2.default.Component);
 
-exports.default = LogisticsSummary;
+exports.default = LogisticssSummary;
 
 /***/ }),
 /* 406 */
@@ -23035,13 +23035,13 @@ var _bakerInfo = __webpack_require__(793);
 
 var _bakerInfo2 = _interopRequireDefault(_bakerInfo);
 
-var _logisticsPartner = __webpack_require__(795);
+var _LogisticssPartner = __webpack_require__(795);
 
-var _logisticsPartner2 = _interopRequireDefault(_logisticsPartner);
+var _LogisticssPartner2 = _interopRequireDefault(_LogisticssPartner);
 
-var _logisticsPartner3 = __webpack_require__(796);
+var _LogisticssPartner3 = __webpack_require__(796);
 
-var _logisticsPartner4 = _interopRequireDefault(_logisticsPartner3);
+var _LogisticssPartner4 = _interopRequireDefault(_LogisticssPartner3);
 
 var _retailer = __webpack_require__(799);
 
@@ -23066,8 +23066,8 @@ _reactDom2.default.render(_react2.default.createElement(
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _dashBoard2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/baker', component: _Baker2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/bakerInfo', component: _bakerInfo2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/log1', component: _logisticsPartner2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/log2', component: _logisticsPartner4.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/log1', component: _LogisticssPartner2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/log2', component: _LogisticssPartner4.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/retailer', component: _retailer2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/dc', component: _distributionCenter2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/customer', component: _customer2.default })
@@ -40352,9 +40352,9 @@ var _preview = __webpack_require__(756);
 
 var _preview2 = _interopRequireDefault(_preview);
 
-var _logistics = __webpack_require__(757);
+var _Logisticss = __webpack_require__(757);
 
-var _logistics2 = _interopRequireDefault(_logistics);
+var _Logisticss2 = _interopRequireDefault(_Logisticss);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -62133,9 +62133,9 @@ var ShippingInformation = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Logistic Partner'
+                    'Logistics Partner'
                   ),
-                  _react2.default.createElement(_semanticUiReact.Dropdown, { placeholder: 'Logistic Partner', selection: 'selection', options: countryOptions, style: {
+                  _react2.default.createElement(_semanticUiReact.Dropdown, { placeholder: 'Logistics Partner', selection: 'selection', options: countryOptions, style: {
                       opacity: "0.6"
                     } })
                 )
@@ -62183,7 +62183,7 @@ var ShippingInformation = function (_React$Component) {
               _react2.default.createElement(
                 'label',
                 null,
-                'Suggested Temparature'
+                'Suggested Temperature'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement('br', null),
@@ -62500,7 +62500,7 @@ var Preview = function (_React$Component) {
                     _react2.default.createElement(
                       'label',
                       { style: { float: 'right', fontSize: '15px' } },
-                      'Logistic Partner'
+                      'Logistics Partner'
                     )
                   ),
                   _react2.default.createElement(
@@ -62509,7 +62509,7 @@ var Preview = function (_React$Component) {
                     _react2.default.createElement(
                       'label',
                       { style: { float: 'left', fontWeight: 'bold', fontSize: '15px' } },
-                      'Travel Logistic Company'
+                      'Travel Logistics Company'
                     )
                   )
                 ),
@@ -62522,7 +62522,7 @@ var Preview = function (_React$Component) {
                     _react2.default.createElement(
                       'label',
                       { style: { float: 'right', fontSize: '15px' } },
-                      'Suggested Temparature'
+                      'Suggested Temperature'
                     ),
                     _react2.default.createElement('br', null),
                     _react2.default.createElement('br', null),
@@ -62589,16 +62589,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Logistics1 = function (_React$Component) {
-  _inherits(Logistics1, _React$Component);
+var Logisticss1 = function (_React$Component) {
+  _inherits(Logisticss1, _React$Component);
 
-  function Logistics1() {
-    _classCallCheck(this, Logistics1);
+  function Logisticss1() {
+    _classCallCheck(this, Logisticss1);
 
-    return _possibleConstructorReturn(this, (Logistics1.__proto__ || Object.getPrototypeOf(Logistics1)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Logisticss1.__proto__ || Object.getPrototypeOf(Logisticss1)).apply(this, arguments));
   }
 
-  _createClass(Logistics1, [{
+  _createClass(Logisticss1, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -62607,7 +62607,7 @@ var Logistics1 = function (_React$Component) {
         _react2.default.createElement(
           _semanticUiReact.Header,
           { as: 'h2' },
-          'Logistics'
+          'Logisticss'
         ),
         _react2.default.createElement(
           _semanticUiReact.Input,
@@ -62628,10 +62628,10 @@ var Logistics1 = function (_React$Component) {
     }
   }]);
 
-  return Logistics1;
+  return Logisticss1;
 }(_react2.default.Component);
 
-exports.default = Logistics1;
+exports.default = Logisticss1;
 
 /***/ }),
 /* 758 */
@@ -67902,7 +67902,7 @@ var DashBoard = function (_React$Component) {
                     _react2.default.createElement(
                       'span',
                       { className: 'headers' },
-                      'FoodHaul Logistics'
+                      'FoodHaul Logisticss'
                     )
                   )
                 )
@@ -67946,7 +67946,7 @@ var DashBoard = function (_React$Component) {
                     _react2.default.createElement(
                       'span',
                       { className: 'headers' },
-                      'TimBrothers Logistics'
+                      'TimBrothers Logisticss'
                     )
                   )
                 )
@@ -68684,7 +68684,7 @@ var BakerInfoPreview = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Net Quanity'
+                    'Net Quantity'
                   ),
                   _react2.default.createElement(
                     'label',
@@ -68760,17 +68760,17 @@ var _reactSwipeableViews = __webpack_require__(54);
 
 var _reactSwipeableViews2 = _interopRequireDefault(_reactSwipeableViews);
 
-var _logisticLogin = __webpack_require__(81);
+var _LogisticsLogin = __webpack_require__(81);
 
-var _logisticLogin2 = _interopRequireDefault(_logisticLogin);
+var _LogisticsLogin2 = _interopRequireDefault(_LogisticsLogin);
 
-var _logisticInfo = __webpack_require__(404);
+var _LogisticsInfo = __webpack_require__(404);
 
-var _logisticInfo2 = _interopRequireDefault(_logisticInfo);
+var _LogisticsInfo2 = _interopRequireDefault(_LogisticsInfo);
 
-var _logisticsSummary = __webpack_require__(405);
+var _LogisticssSummary = __webpack_require__(405);
 
-var _logisticsSummary2 = _interopRequireDefault(_logisticsSummary);
+var _LogisticssSummary2 = _interopRequireDefault(_LogisticssSummary);
 
 var _reactRouterDom = __webpack_require__(55);
 
@@ -68782,13 +68782,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticsPartner1 = function (_React$Component) {
-  _inherits(LogisticsPartner1, _React$Component);
+var LogisticssPartner1 = function (_React$Component) {
+  _inherits(LogisticssPartner1, _React$Component);
 
-  function LogisticsPartner1() {
-    _classCallCheck(this, LogisticsPartner1);
+  function LogisticssPartner1() {
+    _classCallCheck(this, LogisticssPartner1);
 
-    var _this = _possibleConstructorReturn(this, (LogisticsPartner1.__proto__ || Object.getPrototypeOf(LogisticsPartner1)).call(this));
+    var _this = _possibleConstructorReturn(this, (LogisticssPartner1.__proto__ || Object.getPrototypeOf(LogisticssPartner1)).call(this));
 
     _this.state = { slidingIndex: 0, butonComponents: '', open: false };
     _this.handleLogin = _this.handleLogin.bind(_this);
@@ -68796,7 +68796,7 @@ var LogisticsPartner1 = function (_React$Component) {
     return _this;
   }
 
-  _createClass(LogisticsPartner1, [{
+  _createClass(LogisticssPartner1, [{
     key: 'handleModal',
     value: function handleModal() {
       this.setState({ open: true });
@@ -68880,7 +68880,7 @@ var LogisticsPartner1 = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'headers' },
-                    'Logistic Partner'
+                    'Logistics Partner'
                   )
                 )
               )
@@ -68904,7 +68904,7 @@ var LogisticsPartner1 = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'headers', style: { color: '#0e1e7a' } },
-                    'Logistic Partner'
+                    'Logistics Partner'
                   )
                 )
               ),
@@ -68920,17 +68920,17 @@ var LogisticsPartner1 = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticLogin2.default, { handleLogin: this.handleLogin })
+                  _react2.default.createElement(_LogisticsLogin2.default, { handleLogin: this.handleLogin })
                 ),
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticInfo2.default, null)
+                  _react2.default.createElement(_LogisticsInfo2.default, null)
                 ),
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticsSummary2.default, null)
+                  _react2.default.createElement(_LogisticssSummary2.default, null)
                 )
               ),
               _react2.default.createElement('br', null),
@@ -68981,7 +68981,7 @@ var LogisticsPartner1 = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                '7th Jan 2018,Sun  |FoodHaul Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
+                '7th Jan 2018,Sun  |FoodHaul Logisticss| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
               ),
               _react2.default.createElement('br', null)
             )
@@ -69002,10 +69002,10 @@ var LogisticsPartner1 = function (_React$Component) {
     }
   }]);
 
-  return LogisticsPartner1;
+  return LogisticssPartner1;
 }(_react2.default.Component);
 
-exports.default = LogisticsPartner1;
+exports.default = LogisticssPartner1;
 
 /***/ }),
 /* 796 */
@@ -69030,17 +69030,17 @@ var _reactSwipeableViews = __webpack_require__(54);
 
 var _reactSwipeableViews2 = _interopRequireDefault(_reactSwipeableViews);
 
-var _logisticLogin = __webpack_require__(81);
+var _LogisticsLogin = __webpack_require__(81);
 
-var _logisticLogin2 = _interopRequireDefault(_logisticLogin);
+var _LogisticsLogin2 = _interopRequireDefault(_LogisticsLogin);
 
-var _logisticsInfo = __webpack_require__(797);
+var _LogisticssInfo = __webpack_require__(797);
 
-var _logisticsInfo2 = _interopRequireDefault(_logisticsInfo);
+var _LogisticssInfo2 = _interopRequireDefault(_LogisticssInfo);
 
-var _logisticsSummary = __webpack_require__(798);
+var _LogisticssSummary = __webpack_require__(798);
 
-var _logisticsSummary2 = _interopRequireDefault(_logisticsSummary);
+var _LogisticssSummary2 = _interopRequireDefault(_LogisticssSummary);
 
 var _reactRouterDom = __webpack_require__(55);
 
@@ -69052,13 +69052,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticsPartner2 = function (_React$Component) {
-  _inherits(LogisticsPartner2, _React$Component);
+var LogisticssPartner2 = function (_React$Component) {
+  _inherits(LogisticssPartner2, _React$Component);
 
-  function LogisticsPartner2() {
-    _classCallCheck(this, LogisticsPartner2);
+  function LogisticssPartner2() {
+    _classCallCheck(this, LogisticssPartner2);
 
-    var _this = _possibleConstructorReturn(this, (LogisticsPartner2.__proto__ || Object.getPrototypeOf(LogisticsPartner2)).call(this));
+    var _this = _possibleConstructorReturn(this, (LogisticssPartner2.__proto__ || Object.getPrototypeOf(LogisticssPartner2)).call(this));
 
     _this.state = { slidingIndex: 0, butonComponents: '', open: false };
     _this.handleLogin = _this.handleLogin.bind(_this);
@@ -69066,7 +69066,7 @@ var LogisticsPartner2 = function (_React$Component) {
     return _this;
   }
 
-  _createClass(LogisticsPartner2, [{
+  _createClass(LogisticssPartner2, [{
     key: 'handleModal',
     value: function handleModal() {
       this.setState({ open: true });
@@ -69150,7 +69150,7 @@ var LogisticsPartner2 = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'headers' },
-                    'Logistic Partner'
+                    'Logistics Partner'
                   )
                 )
               )
@@ -69174,7 +69174,7 @@ var LogisticsPartner2 = function (_React$Component) {
                   _react2.default.createElement(
                     'span',
                     { className: 'headers', style: { color: '#0e1e7a' } },
-                    'Logistic Partner'
+                    'Logistics Partner'
                   )
                 )
               ),
@@ -69190,17 +69190,17 @@ var LogisticsPartner2 = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticLogin2.default, { handleLogin: this.handleLogin })
+                  _react2.default.createElement(_LogisticsLogin2.default, { handleLogin: this.handleLogin })
                 ),
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticsInfo2.default, null)
+                  _react2.default.createElement(_LogisticssInfo2.default, null)
                 ),
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticsSummary2.default, null)
+                  _react2.default.createElement(_LogisticssSummary2.default, null)
                 )
               ),
               _react2.default.createElement('br', null),
@@ -69251,7 +69251,7 @@ var LogisticsPartner2 = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                '7th Jan 2018,Sun  |FoodHaul Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
+                '7th Jan 2018,Sun  |FoodHaul Logisticss| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement('br', null),
@@ -69265,7 +69265,7 @@ var LogisticsPartner2 = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                '7th Jan 2018,Sun  |TimBrothers Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD'
+                '7th Jan 2018,Sun  |TimBrothers Logisticss| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD'
               ),
               _react2.default.createElement('br', null)
             )
@@ -69286,10 +69286,10 @@ var LogisticsPartner2 = function (_React$Component) {
     }
   }]);
 
-  return LogisticsPartner2;
+  return LogisticssPartner2;
 }(_react2.default.Component);
 
-exports.default = LogisticsPartner2;
+exports.default = LogisticssPartner2;
 
 /***/ }),
 /* 797 */
@@ -69318,16 +69318,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticInfo2 = function (_React$Component) {
-  _inherits(LogisticInfo2, _React$Component);
+var LogisticsInfo2 = function (_React$Component) {
+  _inherits(LogisticsInfo2, _React$Component);
 
-  function LogisticInfo2() {
-    _classCallCheck(this, LogisticInfo2);
+  function LogisticsInfo2() {
+    _classCallCheck(this, LogisticsInfo2);
 
-    return _possibleConstructorReturn(this, (LogisticInfo2.__proto__ || Object.getPrototypeOf(LogisticInfo2)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LogisticsInfo2.__proto__ || Object.getPrototypeOf(LogisticsInfo2)).apply(this, arguments));
   }
 
-  _createClass(LogisticInfo2, [{
+  _createClass(LogisticsInfo2, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -69395,12 +69395,12 @@ var LogisticInfo2 = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'TimBrothers Food Logistics'
+                  'TimBrothers Food Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -69519,10 +69519,10 @@ var LogisticInfo2 = function (_React$Component) {
     }
   }]);
 
-  return LogisticInfo2;
+  return LogisticsInfo2;
 }(_react2.default.Component);
 
-exports.default = LogisticInfo2;
+exports.default = LogisticsInfo2;
 
 /***/ }),
 /* 798 */
@@ -69551,16 +69551,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var LogisticsSummary2 = function (_React$Component) {
-  _inherits(LogisticsSummary2, _React$Component);
+var LogisticssSummary2 = function (_React$Component) {
+  _inherits(LogisticssSummary2, _React$Component);
 
-  function LogisticsSummary2() {
-    _classCallCheck(this, LogisticsSummary2);
+  function LogisticssSummary2() {
+    _classCallCheck(this, LogisticssSummary2);
 
-    return _possibleConstructorReturn(this, (LogisticsSummary2.__proto__ || Object.getPrototypeOf(LogisticsSummary2)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (LogisticssSummary2.__proto__ || Object.getPrototypeOf(LogisticssSummary2)).apply(this, arguments));
   }
 
-  _createClass(LogisticsSummary2, [{
+  _createClass(LogisticssSummary2, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -69623,12 +69623,12 @@ var LogisticsSummary2 = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Logistic Partner Name'
+                    'Logistics Partner Name'
                   ),
                   _react2.default.createElement(
                     'label',
                     { className: 'headers', style: { fontSize: '20px' } },
-                    'TimBrothers Food Logistics'
+                    'TimBrothers Food Logisticss'
                   )
                 ),
                 _react2.default.createElement('br', null),
@@ -69783,10 +69783,10 @@ var LogisticsSummary2 = function (_React$Component) {
     }
   }]);
 
-  return LogisticsSummary2;
+  return LogisticssSummary2;
 }(_react2.default.Component);
 
-exports.default = LogisticsSummary2;
+exports.default = LogisticssSummary2;
 
 /***/ }),
 /* 799 */
@@ -69811,9 +69811,9 @@ var _reactSwipeableViews = __webpack_require__(54);
 
 var _reactSwipeableViews2 = _interopRequireDefault(_reactSwipeableViews);
 
-var _logisticLogin = __webpack_require__(81);
+var _LogisticsLogin = __webpack_require__(81);
 
-var _logisticLogin2 = _interopRequireDefault(_logisticLogin);
+var _LogisticsLogin2 = _interopRequireDefault(_LogisticsLogin);
 
 var _retailerInfo = __webpack_require__(800);
 
@@ -69970,7 +69970,7 @@ var Retailer = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticLogin2.default, { handleLogin: this.handleLogin })
+                  _react2.default.createElement(_LogisticsLogin2.default, { handleLogin: this.handleLogin })
                 ),
                 _react2.default.createElement(
                   'div',
@@ -70031,7 +70031,7 @@ var Retailer = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                '7th Jan 2018,Sun  |FoodHaul Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
+                '7th Jan 2018,Sun  |FoodHaul Logisticss| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement('br', null),
@@ -70045,7 +70045,7 @@ var Retailer = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 null,
-                '7th Jan 2018,Sun  |TimBrothers Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD'
+                '7th Jan 2018,Sun  |TimBrothers Logisticss| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD'
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement('br', null),
@@ -70181,12 +70181,12 @@ var RetailerInfo = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'TimBrothers Food Logistics'
+                  'TimBrothers Food Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -70392,12 +70392,12 @@ var RetailerSummary = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Logistic Partner Name'
+                    'Logistics Partner Name'
                   ),
                   _react2.default.createElement(
                     'label',
                     { className: 'headers', style: { fontSize: '20px' } },
-                    'TimBrothers Food Logistics'
+                    'TimBrothers Food Logisticss'
                   )
                 ),
                 _react2.default.createElement('br', null),
@@ -70551,17 +70551,17 @@ var _reactSwipeableViews = __webpack_require__(54);
 
 var _reactSwipeableViews2 = _interopRequireDefault(_reactSwipeableViews);
 
-var _logisticLogin = __webpack_require__(81);
+var _LogisticsLogin = __webpack_require__(81);
 
-var _logisticLogin2 = _interopRequireDefault(_logisticLogin);
+var _LogisticsLogin2 = _interopRequireDefault(_LogisticsLogin);
 
-var _logisticInfo = __webpack_require__(404);
+var _LogisticsInfo = __webpack_require__(404);
 
-var _logisticInfo2 = _interopRequireDefault(_logisticInfo);
+var _LogisticsInfo2 = _interopRequireDefault(_LogisticsInfo);
 
-var _logisticsSummary = __webpack_require__(405);
+var _LogisticssSummary = __webpack_require__(405);
 
-var _logisticsSummary2 = _interopRequireDefault(_logisticsSummary);
+var _LogisticssSummary2 = _interopRequireDefault(_LogisticssSummary);
 
 var _dcBound = __webpack_require__(803);
 
@@ -70651,7 +70651,7 @@ var DistributionCenter = function (_React$Component) {
           _react2.default.createElement(
             'span',
             null,
-            '7th Jan 2018,Sun  |FoodHaul Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
+            '7th Jan 2018,Sun  |FoodHaul Logisticss| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC'
           ),
           _react2.default.createElement('br', null),
           _react2.default.createElement('br', null),
@@ -70845,7 +70845,7 @@ var DistributionCenter = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticLogin2.default, { handleLogin: this.handleLogin })
+                  _react2.default.createElement(_LogisticsLogin2.default, { handleLogin: this.handleLogin })
                 ),
                 _react2.default.createElement(
                   'div',
@@ -71112,12 +71112,12 @@ var Idc = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'FoodHaul Logistics'
+                  'FoodHaul Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -71330,12 +71330,12 @@ var Odc = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'TimBrothers Food Logistics'
+                  'TimBrothers Food Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -71541,12 +71541,12 @@ var OdcSummary = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Logistic Partner Name'
+                    'Logistics Partner Name'
                   ),
                   _react2.default.createElement(
                     'label',
                     { className: 'headers', style: { fontSize: '20px' } },
-                    'TimBrothers Food Logistics'
+                    'TimBrothers Food Logisticss'
                   )
                 ),
                 _react2.default.createElement('br', null),
@@ -71781,12 +71781,12 @@ var IdcSummary = function (_React$Component) {
                 _react2.default.createElement(
                   'label',
                   null,
-                  'Logistic Partner Name'
+                  'Logistics Partner Name'
                 ),
                 _react2.default.createElement(
                   'label',
                   { className: 'headers', style: { fontSize: '20px', color: 'black' } },
-                  'FoodHaul Logistics'
+                  'FoodHaul Logisticss'
                 )
               ),
               _react2.default.createElement('br', null),
@@ -71937,9 +71937,9 @@ var _reactSwipeableViews = __webpack_require__(54);
 
 var _reactSwipeableViews2 = _interopRequireDefault(_reactSwipeableViews);
 
-var _logisticLogin = __webpack_require__(81);
+var _LogisticsLogin = __webpack_require__(81);
 
-var _logisticLogin2 = _interopRequireDefault(_logisticLogin);
+var _LogisticsLogin2 = _interopRequireDefault(_LogisticsLogin);
 
 var _customerProductInfo = __webpack_require__(809);
 
@@ -72064,7 +72064,7 @@ var Customer = function (_React$Component) {
                 _react2.default.createElement(
                   'div',
                   { style: { overflow: 'hidden' } },
-                  _react2.default.createElement(_logisticLogin2.default, { handleLogin: this.handleLogin })
+                  _react2.default.createElement(_LogisticsLogin2.default, { handleLogin: this.handleLogin })
                 ),
                 _react2.default.createElement(
                   'div',
@@ -72176,7 +72176,7 @@ var CustomerInfo = function (_React$Component) {
             )
           )
         );
-        this.setState({ map: temp, open: true, headding: 'Temparature', icon: 'thermometer three quarters' });
+        this.setState({ map: temp, open: true, headding: 'Temperature', icon: 'thermometer three quarters' });
       } else if (value == 'humidy') {
         var temp = _react2.default.createElement(
           'div',
@@ -72402,7 +72402,7 @@ var CustomerInfo = function (_React$Component) {
                   _react2.default.createElement(
                     'label',
                     null,
-                    'Net Quanity'
+                    'Net Quantity'
                   ),
                   _react2.default.createElement(
                     'label',
@@ -72532,7 +72532,7 @@ var CustomerInfo = function (_React$Component) {
                 _react2.default.createElement(
                   'span',
                   { className: 'headers', style: { color: 'black' } },
-                  'Temparature'
+                  'Temperature'
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement('br', null),
@@ -73453,12 +73453,12 @@ var Shipping = function (_React$Component) {
                     _react2.default.createElement(
                       'label',
                       null,
-                      'Logistic Partner Name'
+                      'Logistics Partner Name'
                     ),
                     _react2.default.createElement(
                       'label',
                       { className: 'headers', style: { fontSize: '17px', color: 'black' } },
-                      'FoodHaul Logistics'
+                      'FoodHaul Logisticss'
                     )
                   ),
                   _react2.default.createElement('br', null),
@@ -73693,12 +73693,12 @@ var Shipping2 = function (_React$Component) {
                     _react2.default.createElement(
                       'label',
                       null,
-                      'Logistic Partner Name'
+                      'Logistics Partner Name'
                     ),
                     _react2.default.createElement(
                       'label',
                       { className: 'headers', style: { fontSize: '17px', color: 'black' } },
-                      'TimBrothers Logistics'
+                      'TimBrothers Logisticss'
                     )
                   ),
                   _react2.default.createElement('br', null),

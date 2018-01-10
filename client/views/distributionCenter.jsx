@@ -1,9 +1,9 @@
 import React from 'react';
 import {Modal,Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 'semantic-ui-react';
 import SwipeableViews from 'react-swipeable-views';
-import LogisticLogin from './../components/logisticLogin.jsx'
-import LogisticInfo from './../components/logisticInfo.jsx'
-import LogisticsSummary from './../components/logisticsSummary.jsx'
+import LogisticsLogin from './../components/logisticLogin.jsx'
+import LogisticsInfo from './../components/logisticInfo.jsx'
+import LogisticssSummary from './../components/logisticsSummary.jsx'
 import DcBound from './../components/dcBound.jsx'
 import Idc from './../components/idc.jsx';
 import Odc from './../components/odc.jsx';
@@ -155,7 +155,7 @@ export default class DistributionCenter extends React.Component
             </div>
 
             <div style={{overflow:'hidden'}}>
-            <LogisticLogin handleLogin={this.handleLogin}/>
+            <LogisticsLogin handleLogin={this.handleLogin}/>
             </div>
 
             <div style={{overflow:'hidden'}}>

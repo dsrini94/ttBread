@@ -1,7 +1,7 @@
 import React from 'react';
 import {Dimmer, Loader,Input,Modal,Icon,Image, Header, Divider, Grid,Segment,Button,Form} from 'semantic-ui-react';
 
-export default class LogisticLogin extends React.Component
+export default class LogisticsLogin extends React.Component
 {
   constructor(props)
   {

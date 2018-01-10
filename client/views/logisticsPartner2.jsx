@@ -1,13 +1,13 @@
 import React from 'react';
 import {Modal,Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 'semantic-ui-react';
 import SwipeableViews from 'react-swipeable-views';
-import LogisticLogin from './../components/logisticLogin.jsx'
-import LogisticInfo2 from './../components/logisticsInfo2.jsx'
-import LogisticsSummary2 from './../components/logisticsSummary2.jsx'
+import LogisticsLogin from './../components/logisticLogin.jsx'
+import LogisticsInfo2 from './../components/logisticsInfo2.jsx'
+import LogisticssSummary2 from './../components/logisticsSummary2.jsx'
 import {HashRouter, Route, Link} from 'react-router-dom';
 
 
-export default class LogisticsPartner2 extends React.Component
+export default class LogisticssPartner2 extends React.Component
 {
 
   constructor()
@@ -67,7 +67,7 @@ export default class LogisticsPartner2 extends React.Component
           <Grid.Column width={2} />
           <Grid.Column width={12}>
             <Segment inverted style={{backgroundColor:'#0e1e7a'}}><Header style={{textAlign:'center'}}>
-              <span className="headers">Logistic Partner</span>
+              <span className="headers">Logistics Partner</span>
             </Header></Segment>
           </Grid.Column>
           <Grid.Column width={2} />
@@ -76,20 +76,20 @@ export default class LogisticsPartner2 extends React.Component
         <Grid.Row>
           <Grid.Column width={2} />
           <Grid.Column width={4} >
-          <center>  <Header as='h1' style={{marginTop:'100px'}}><span className="headers" style={{color:'#0e1e7a'}}>Logistic Partner</span></Header></center>
+          <center>  <Header as='h1' style={{marginTop:'100px'}}><span className="headers" style={{color:'#0e1e7a'}}>Logistics Partner</span></Header></center>
             <br/>
             <Image src ='http://carpng.com/wp-content/uploads/full/generic-semi-truck-2238-0.png' />
           </Grid.Column>
           <Grid.Column width={8}>
           <SwipeableViews index={this.state.slidingIndex}>
             <div style={{overflow:'hidden'}}>
-              <LogisticLogin handleLogin={this.handleLogin}/>
+              <LogisticsLogin handleLogin={this.handleLogin}/>
             </div>
             <div style={{overflow:'hidden'}}>
-              <LogisticInfo2 />
+              <LogisticsInfo2 />
             </div>
             <div style={{overflow:'hidden'}}>
-              <LogisticsSummary2 />
+              <LogisticssSummary2 />
             </div>
           </SwipeableViews>
           <br/>

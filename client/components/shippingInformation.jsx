@@ -33,8 +33,8 @@ export default class ShippingInformation extends React.Component {
                 <input placeholder='Postalcode'/>
               </Form.Field>
               <Form.Field>
-                <label>Logistic Partner</label>
-                <Dropdown placeholder='Logistic Partner' selection="selection" options={countryOptions} style={{
+                <label>Logistics Partner</label>
+                <Dropdown placeholder='Logistics Partner' selection="selection" options={countryOptions} style={{
                     opacity: "0.6"
                   }}/>
               </Form.Field>
@@ -60,7 +60,7 @@ export default class ShippingInformation extends React.Component {
               </Form.Field>
             </Form>
             <br/>
-            <label>Suggested Temparature</label>
+            <label>Suggested Temperature</label>
             <br/>
             <br/>
             <Segment circular="circular" style={{height:115,width:115}} color="blue">

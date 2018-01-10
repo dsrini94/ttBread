@@ -19,7 +19,7 @@ export default class TempTable extends React.Component {
         <Table.Row key={i}>
           <Table.Cell>{item.Time}</Table.Cell>
           <Table.Cell>{item.Location}</Table.Cell>
-          <Table.Cell>{item.Temparature}</Table.Cell>
+          <Table.Cell>{item.Temperature}</Table.Cell>
         </Table.Row>
       )
     }));
@@ -34,7 +34,7 @@ export default class TempTable extends React.Component {
         <Table.Row key={i}>
           <Table.Cell>{item.Time}</Table.Cell>
           <Table.Cell>{item.Location}</Table.Cell>
-          <Table.Cell>{item.Temparature}</Table.Cell>
+          <Table.Cell>{item.Temperature}</Table.Cell>
         </Table.Row>
       )
     }
@@ -57,7 +57,7 @@ export default class TempTable extends React.Component {
         <Table.Row key={i}>
           <Table.Cell>{item.Time}</Table.Cell>
           <Table.Cell>{item.Location}</Table.Cell>
-          <Table.Cell>{item.Temparature}</Table.Cell>
+          <Table.Cell>{item.Temperature}</Table.Cell>
         </Table.Row>
       )
     }));
@@ -73,7 +73,7 @@ export default class TempTable extends React.Component {
         <Table.Row key={i}>
           <Table.Cell>{item.Time}</Table.Cell>
           <Table.Cell>{item.Location}</Table.Cell>
-          <Table.Cell>{item.Temparature}</Table.Cell>
+          <Table.Cell>{item.Temperature}</Table.Cell>
         </Table.Row>
       )
     }
@@ -90,7 +90,7 @@ export default class TempTable extends React.Component {
           <Table.Row>
             <Table.HeaderCell>Time</Table.HeaderCell>
             <Table.HeaderCell>Location</Table.HeaderCell>
-            <Table.HeaderCell>Temparature</Table.HeaderCell>
+            <Table.HeaderCell>Temperature</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>

@@ -104,16 +104,16 @@ export default class Preview extends React.Component
 
               <Grid.Row>
                 <Grid.Column width={8}>
-                  <label style={{float:'right',fontSize:'15px'}}>Logistic Partner</label>
+                  <label style={{float:'right',fontSize:'15px'}}>Logistics Partner</label>
                 </Grid.Column>
                 <Grid.Column width={8}>
-                <label style={{float:'left',fontWeight:'bold',fontSize:'15px'}}>Travel Logistic Company</label>
+                <label style={{float:'left',fontWeight:'bold',fontSize:'15px'}}>Travel Logistics Company</label>
                 </Grid.Column>
               </Grid.Row>
 
               <Grid.Row>
                 <Grid.Column width={8}>
-                  <label style={{float:'right',fontSize:'15px'}}>Suggested Temparature</label>
+                  <label style={{float:'right',fontSize:'15px'}}>Suggested Temperature</label>
                   <br/>
                   <br/>
                   <label style={{float:'right',fontSize:'15px'}}>Suggested Humidity</label>

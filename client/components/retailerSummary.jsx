@@ -23,7 +23,7 @@ export default class RetailerSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Logistic Partner Name</label>
+                <label >Logistics Partner Name</label>
                 <label className="headers" style={{fontSize:'20px'}}>TimBrothers Food Logistics</label>
               </Form.Field>
               <br/>

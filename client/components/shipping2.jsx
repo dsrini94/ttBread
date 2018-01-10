@@ -38,7 +38,7 @@ export default class Shipping2 extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Logistic Partner Name</label>
+              <label >Logistics Partner Name</label>
               <label className="headers" style={{fontSize:'17px',color:'black'}}>TimBrothers Logistics</label>
             </Form.Field>
             <br/>

@@ -23,7 +23,7 @@ export default class OdcSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Logistic Partner Name</label>
+                <label >Logistics Partner Name</label>
                 <label className="headers" style={{fontSize:'20px'}}>TimBrothers Food Logistics</label>
               </Form.Field>
               <br/>
@@ -61,12 +61,12 @@ export default class OdcSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Average Temperature Maintained</label>
+                <label >Temp Recorded (Outbound)</label>
                 <label className="headers" style={{fontSize:'20px'}}>50°F (10°C)</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Average Humidity Maintained </label>
+                <label >Humidity Recorded (Outbound)</label>
                 <label className="headers" style={{fontSize:'20px'}}>60% </label>
               </Form.Field>
               </Form>

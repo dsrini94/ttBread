@@ -41,7 +41,7 @@ export default class Baker extends React.Component
             </Grid.Column>
             <Grid.Column width={4}>
               <Image src='./../../images/sticks.jpg'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Read sticks</span></Header></center>
+              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Bread sticks</span></Header></center>
             </Grid.Column>
             <Grid.Column width={4}>
               <Image src='./../../images/loaves.jpg'/>

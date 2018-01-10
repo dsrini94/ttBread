@@ -17,7 +17,7 @@ export default class TempGraph extends React.Component{
 
     tempData.map((item,i)=>{
         templabel.push(item.Time);
-        temp.push(item.Temparature);
+        temp.push(item.Temperature);
     });
 
     this.setState({label:templabel,data:temp})
@@ -28,7 +28,7 @@ export default class TempGraph extends React.Component{
       labels: this.state.label,
       datasets: [
         {
-          label: 'Temparature',
+          label: 'Temperature',
           fill: false,
           lineTension: 0.1,
           backgroundColor: '#c13109',

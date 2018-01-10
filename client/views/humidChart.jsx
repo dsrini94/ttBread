@@ -237,7 +237,7 @@ export default class TempChart extends React.Component {
       labels: this.state.label,
       datasets: [
         {
-          label: 'Humidity',
+          label: 'Humidity (Optimum Humidity is 60)',
           fill: false,
           lineTension: 0.1,
           backgroundColor: '#7ee5a0',

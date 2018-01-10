@@ -14,7 +14,7 @@ import {
   Input
 } from 'semantic-ui-react';
 import SwipeableViews from 'react-swipeable-views';
-import LogisticLogin from './../components/logisticLogin.jsx';
+import LogisticsLogin from './../components/logisticLogin.jsx';
 import CustomerInfo from './../components/customerProductInfo.jsx';
 
 
@@ -79,7 +79,7 @@ export default class Customer extends React.Component {
             <Grid.Column width={8}>
                 <SwipeableViews index={this.state.slidingIndex} >
                   <div style={{overflow:'hidden'}}>
-                    <LogisticLogin handleLogin={this.handleLogin}/>
+                    <LogisticsLogin handleLogin={this.handleLogin}/>
                   </div>
                   <div style={{overflow:'hidden'}}>
                     <CustomerInfo handleHome={this.handleHome}/>

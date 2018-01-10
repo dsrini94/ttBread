@@ -37,7 +37,7 @@ export default class Shipping extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Logistic Partner Name</label>
+                <label >Logistics Partner Name</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>FoodHaul Logistics</label>
               </Form.Field>
               <br/>
@@ -90,7 +90,7 @@ export default class Shipping extends React.Component
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label >Average Temparature Maintained</label>
+              <label >Average Temperature Maintained</label>
               <label className="headers" style={{fontSize:'17px',color:'black'}}>50 °F (10 °C)</label>
             </Form.Field>
             <br/>
