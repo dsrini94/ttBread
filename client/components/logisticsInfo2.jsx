@@ -29,7 +29,7 @@ export default class LogisticsInfo2 extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Global Fashion Logistics</label>
             </Form.Field>
             <br/>
 
@@ -45,10 +45,7 @@ export default class LogisticsInfo2 extends React.Component
             </Form.Field>
             <br/>
 
-            <Form.Field>
-              <label >Vehicle</label>
-              <input defaultValue="XIJ 2THJ"/>
-            </Form.Field>
+
 
           </Form>
           </Grid.Column>
@@ -56,6 +53,12 @@ export default class LogisticsInfo2 extends React.Component
           <Grid.Column width={8}>
 
           <Form>
+
+          <Form.Field>
+            <label >Vehicle</label>
+            <input defaultValue="XIJ 2THJ"/>
+          </Form.Field>
+          <br/>
 
           <Form.Field>
             <label >DC Pick-up - Date </label>
@@ -77,15 +80,6 @@ export default class LogisticsInfo2 extends React.Component
               <input defaultValue="3:40:00 PM" />
             </Form.Field>
 
-            <Form.Field>
-              <label >Average Temperature Maintained </label>
-              <input defaultValue="50°F" />
-            </Form.Field>
-
-            <Form.Field>
-              <label >Average Humidity Maintained </label>
-              <input defaultValue="60%" />
-            </Form.Field>
           </Form>
           </Grid.Column>
         </Grid.Row>

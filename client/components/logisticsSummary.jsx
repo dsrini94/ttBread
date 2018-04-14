@@ -18,17 +18,17 @@ export default class LogisticssSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Shipment ID (Bakery - DC)</label>
+                <label >Shipment ID (Outlet - DC)</label>
                 <label className="headers" style={{fontSize:'20px'}}>SHIP275</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>FoodHaul Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>The Apparel Logistics Group</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Bakery (Pick-up) Location</label>
+                <label >Outlet (Pick-up) Location</label>
                 <label className="headers" style={{fontSize:'20px'}}>Princeton, NJ</label>
               </Form.Field>
               <br/>
@@ -49,12 +49,12 @@ export default class LogisticssSummary extends React.Component
               <br/>
               <br/>
               <Form.Field>
-                <label >Bakery Pick-up - Date </label>
+                <label >Outlet Pick-up - Date </label>
                 <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Bakery Pick-up - Time</label>
+                <label >Outlet Pick-up - Time</label>
                 <label className="headers" style={{fontSize:'20px'}}>10:30:00 AM</label>
               </Form.Field>
               <br/>
@@ -69,13 +69,14 @@ export default class LogisticssSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Average Temperature Maintained</label>
-                <label className="headers" style={{fontSize:'20px'}}>50°F (10°C)</label>
+                <label >Wash</label>
+                <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
               </Form.Field>
               <br/>
+
               <Form.Field>
-                <label >Average Humidity Maintained </label>
-                <label className="headers" style={{fontSize:'20px'}}>60% </label>
+                <label >Iron</label>
+                <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
               </Form.Field>
               </Form>
             </Grid.Column>

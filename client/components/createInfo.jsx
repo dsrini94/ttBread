@@ -47,17 +47,13 @@ const stateOptions = [
 const ingredientOptions = [
   {
     key: 'br',
-    text: 'Bread',
-    value: 'Bread'
+    text: 'Polyester',
+    value: 'Polyester'
   }, {
     key: 'm',
-    text: 'Milk',
-    value: 'Milk'
-  }, {
-    key: 'ye',
-    text: 'Yeast',
-    value: 'Yeast'
-  }
+    text: 'Cotton',
+    value: 'Cotton'
+  },
 ]
 export default class CreateInfo extends React.Component {
 
@@ -109,7 +105,7 @@ export default class CreateInfo extends React.Component {
             <br/>
             <Header as='h2'>
               <span className="headers" style={{
-                  color: '#bcb229'
+                  color: '#676b72'
                 }}>Bread Information</span>
             </Header>
             <center></center>
@@ -122,7 +118,7 @@ export default class CreateInfo extends React.Component {
             <Form>
               <Form.Field>
                 <label >Product Name</label>
-                <Input focus="focus" placeholder='Product Name' defaultValue='HB Whole Wheat Bread'/>
+                <Input focus="focus" placeholder='Product Name' defaultValue='HB T-Shirt'/>
               </Form.Field>
 
               <Form.Field>
@@ -139,21 +135,15 @@ export default class CreateInfo extends React.Component {
                 <label >Ingredients</label>
                 <List>
                   <List.Item onClick={this.handleModal.bind(this,'ING3477488')}>
-                    <Image avatar="avatar" src='https://image.flaticon.com/icons/png/128/146/146289.png'/>
+                    <Image avatar="avatar" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfIw-gtF9AJD_t64cgOkgjcWZ_zP16JHpDu9rRYLfs65QEZhLg'/>
                     <List.Content>
-                      <List.Header>Wheat</List.Header>
+                      <List.Header>Polyester</List.Header>
                     </List.Content>
                   </List.Item>
                   <List.Item onClick={this.handleModal.bind(this,'ING1225665')}>
-                    <Image avatar="avatar" src='https://cdn3.iconfinder.com/data/icons/milk/154/milk-bottle-label-512.png'/>
+                    <Image avatar="avatar" src='https://media.istockphoto.com/vectors/cotton-blossom-illustration-vector-id911801478?k=6&m=911801478&s=612x612&w=0&h=ybTF5ZxJQgKFALuWKTH6r33xiiMffZ6HPWo6NmUarFM='/>
                     <List.Content>
-                      <List.Header>Milk</List.Header>
-                    </List.Content>
-                  </List.Item>
-                  <List.Item onClick={this.handleModal.bind(this,'ING418165')}>
-                    <Image avatar="avatar" src='https://media.istockphoto.com/vectors/bread-crumbs-isolated-on-white-background-detailed-vector-icon-vector-id487736756?k=6&m=487736756&s=612x612&w=0&h=2QmYFPRru0UOVs5Erx34RJeT4HXI7gUhuTv_txEZrNY='/>
-                    <List.Content>
-                      <List.Header>Yeast</List.Header>
+                      <List.Header>Cotton</List.Header>
                     </List.Content>
                   </List.Item>
                 </List>
@@ -165,7 +155,7 @@ export default class CreateInfo extends React.Component {
             <Form>
 
               <Form.Field>
-                <label >Bake Date</label>
+                <label >Manufactured Date</label>
                 <input type='date' value="2018-01-07"/>
               </Form.Field>
 
@@ -175,13 +165,8 @@ export default class CreateInfo extends React.Component {
               </Form.Field>
 
               <Form.Field>
-                <label >Best Before Date</label>
-                <input type='date' value="2018-01-27"/>
-              </Form.Field>
-
-              <Form.Field>
                 <label >Net Quantity</label>
-                <input defaultValue="400g/14.10oz"/>
+                <input defaultValue="1500 Pieces"/>
               </Form.Field>
 
             </Form>

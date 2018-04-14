@@ -22,19 +22,19 @@ export default class LogisticsInfo extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Shipment ID (Bakery - DC)</label>
+              <label >Shipment ID (Outlet - DC)</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>SHIP275</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>FoodHaul Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>The Apparel Logistics Group</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
-              <label >Bakery (Pick-up) Location</label>
+              <label >Outlet (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>
@@ -58,12 +58,12 @@ export default class LogisticsInfo extends React.Component
           <Form>
 
           <Form.Field>
-            <label >Bakery Pick-up - Date </label>
+            <label >Outlet Pick-up - Date </label>
             <input type='date' value="2018-01-07"/>
           </Form.Field>
 
             <Form.Field>
-              <label >Bakery Pick-up - Time</label>
+              <label >Outlet Pick-up - Time</label>
               <input defaultValue="10:30:00 AM" />
             </Form.Field>
 
@@ -78,13 +78,14 @@ export default class LogisticsInfo extends React.Component
             </Form.Field>
 
             <Form.Field>
-              <label >Average Temperature Maintained </label>
-              <input defaultValue="50°F (10°C)" />
+              <label >Wash</label>
+              <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
             </Form.Field>
+            <br/>
 
             <Form.Field>
-              <label >Average Humidity Maintained </label>
-              <input defaultValue="60%" />
+              <label >Iron</label>
+              <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
             </Form.Field>
           </Form>
           </Grid.Column>

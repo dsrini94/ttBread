@@ -89,7 +89,7 @@ handleModal()
           <Grid.Column width={12}>
           <br/>
           <center>
-            <Segment inverted style={{backgroundColor:'#bcb229'}}><Header>Bread Information</Header></Segment>
+            <Segment inverted style={{backgroundColor:'#676b72'}}><Header>T-Shirt Information</Header></Segment>
           </center>
           </Grid.Column>
           <Grid.Column width={2}/>
@@ -105,8 +105,8 @@ handleModal()
           <br/>
           <br/>
             <center>
-            <Header as='h1'><span className="headers" style={{color:'#bcb229',fontSize:'50px',marginLeft:'80px'}}>Bread</span></Header>
-              <Image src='http://www.pngmart.com/files/3/Bread-PNG-Clipart.png' size='massive' style={{
+            <Header as='h1'><span className="headers" style={{color:'#676b72',fontSize:'35px',marginLeft:'80px'}}>TShirt</span></Header>
+              <Image src='https://images-na.ssl-images-amazon.com/images/I/71FyTpYC8IL._UX385_.jpg' size='massive' style={{
                   marginTop: '50px',marginLeft:'45px'
                 }}/>
             </center>

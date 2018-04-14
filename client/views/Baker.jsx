@@ -7,45 +7,29 @@ export default class Baker extends React.Component
   render()
   {
     return(
-      <div>
-        <Image style={{width:window.innerWidth}} src='./../../images/baker.jpg' />
-        <Header style={{fontSize:'125px',position:'absolute',top:'40%',left:'40%',color:'white'}}><span className="heroText">Baker</span></Header>
-        <Header as='h1' style={{textAlign:'center'}}><span className="headers" style={{color:'#bcb229'}}>Select a Product</span></Header>
+      <div style={{position:'relative'}}>
+        <Image style={{width:window.innerWidth}} src='./../../images/manu.jpeg' />
+        <center><Header style={{fontSize:'100px',position:'absolute',top:'15%',left:'27%',color:'white'}}><span className="heroText">Manufacturer</span></Header></center>
+        <Header as='h1' style={{textAlign:'center'}}><span className="headers" style={{color:'#676b72'}}>Select a Product</span></Header>
         <br/>
         <br/>
         <Grid>
           <Grid.Row>
             <Grid.Column width={4}>
-              <Image as={Link} to='/bakerInfo' src='http://www.pngmart.com/files/3/Bread-PNG-Clipart.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Bread</span></Header></center>
+              <Image as={Link} to='/bakerInfo' src='https://images-na.ssl-images-amazon.com/images/I/71FyTpYC8IL._UX385_.jpg'/>
+              <center><Header as='h1'><span className="headers" style={{color:'#676b72'}}>T-Shirt</span></Header></center>
             </Grid.Column>
             <Grid.Column width={4}>
-              <Image src='https://pngimg.com/uploads/bagel/bagel_PNG54.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Bagels</span></Header></center>
+              <center><Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UstXSe-Rh_l0f2zb0XgwyTQhD9Ah6Kfm_ODzvW1i9bGVJXzt'/></center>
+              <center><Header as='h1'><span className="headers" style={{color:'#676b72'}}>Trousers</span></Header></center>
             </Grid.Column>
             <Grid.Column width={4}>
-              <Image src='http://dunkindonuts.bg/assets/uploads/product/38/muffins_preview.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Muffins</span></Header></center>
+              <Image src='http://www.patagonia.com/dis/dw/image/v2/ABBM_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwb1599dfe/images/hi-res/57227_PLCN.jpg?sw=750&sh=750&sm=fit&sfrm=png'/>
+              <center><Header as='h1'><span className="headers" style={{color:'#676b72'}}>Shorts</span></Header></center>
             </Grid.Column>
             <Grid.Column width={4}>
-              <Image src='http://www.hornosdobra.com/img/news/coccion/coccion.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Baguettes</span></Header></center>
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Image src='./../../images/donut.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Donuts</span></Header></center>
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Image src='http://cannichstores.co.uk/wp-content/uploads/2017/04/Pastries.png'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Pastries</span></Header></center>
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Image src='./../../images/sticks.jpg'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Bread sticks</span></Header></center>
-            </Grid.Column>
-            <Grid.Column width={4}>
-              <Image src='./../../images/loaves.jpg'/>
-              <center><Header as='h1'><span className="headers" style={{color:'#bcb229'}}>Loaves</span></Header></center>
+              <Image src='https://assets.abfrlcdn.com/img/app/product/2/232524-813340-large.jpg'/>
+              <center><Header as='h1'><span className="headers" style={{color:'#676b72'}}>Joggers</span></Header></center>
             </Grid.Column>
           </Grid.Row>
         </Grid>

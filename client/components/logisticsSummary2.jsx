@@ -24,7 +24,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>TimBrothers Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>Global Fashion Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -37,16 +37,18 @@ export default class LogisticssSummary2 extends React.Component
                 <label className="headers" style={{fontSize:'20px'}}>New Brunswick, N</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Vehicle</label>
-                <label className="headers" style={{fontSize:'20px'}}>XIJ 2THJ</label>
-              </Form.Field>
+
 
               </Form>
             </Grid.Column>
             <Grid.Column width={8}>
               <Form>
               <br/>
+              <br/>
+              <Form.Field>
+                <label >Vehicle</label>
+                <label className="headers" style={{fontSize:'20px'}}>XIJ 2THJ</label>
+              </Form.Field>
               <br/>
               <Form.Field>
                 <label >Bakery Pick-up - Date </label>
@@ -66,16 +68,6 @@ export default class LogisticssSummary2 extends React.Component
               <Form.Field>
                 <label >DC Drop -  Time</label>
                 <label className="headers" style={{fontSize:'20px'}}>3:40:00 PM</label>
-              </Form.Field>
-              <br/>
-              <Form.Field>
-                <label >Average Temperature Maintained</label>
-                <label className="headers" style={{fontSize:'20px'}}>50°F (10°C)</label>
-              </Form.Field>
-              <br/>
-              <Form.Field>
-                <label >Average Humidity Maintained </label>
-                <label className="headers" style={{fontSize:'20px'}}>60% </label>
               </Form.Field>
               </Form>
             </Grid.Column>

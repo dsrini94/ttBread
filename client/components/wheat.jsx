@@ -24,7 +24,7 @@ export default class Wheat extends React.Component
       <Accordion styled fluid>
         <Accordion.Title active={this.state.activeIndex === 0} index={0} onClick={this.handleClick.bind(this)}>
           <Icon name='dropdown' />
-          Wheat
+          Cotton
         </Accordion.Title>
         <Accordion.Content active={this.state.activeIndex === 0} >
           <Grid>

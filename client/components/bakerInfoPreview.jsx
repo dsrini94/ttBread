@@ -16,7 +16,7 @@ export default class BakerInfoPreview extends React.Component
 
                 <Form.Field>
                   <label >Product Brand Name</label>
-                  <label className="headers" style={{fontSize:'20px'}}>HB Whole Wheat Bread</label>
+                  <label className="headers" style={{fontSize:'20px'}}>HB T-Shirt</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
@@ -51,25 +51,20 @@ export default class BakerInfoPreview extends React.Component
           <Form>
 
             <Form.Field>
-              <label >Best Before Date</label>
-              <label className="headers" style={{fontSize:'20px'}}>27th Jan, 2018</label>
-            </Form.Field>
-            <br/>
-            <Form.Field>
               <label >Net Quantity</label>
-              <label className="headers" style={{fontSize:'20px'}}>400g/14.10oz</label>
+              <label className="headers" style={{fontSize:'20px'}}>1500 Pieces</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
-              <label >StorageTemp</label>
-              <label className="headers" style={{fontSize:'20px'}}>50-60°F (10-15°C)</label>
+              <label >Wash</label>
+              <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
-              <label >Storage Humidity</label>
-              <label className="headers" style={{fontSize:'20px'}}>60-65% (Relative Humidity)</label>
+              <label >Iron</label>
+              <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
             </Form.Field>
             <br/>
 

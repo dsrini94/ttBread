@@ -29,7 +29,7 @@ export default class IdcSummary extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>FoodHaul Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>The Apparel Logistics Group</label>
             </Form.Field>
             <br/>
 
@@ -39,11 +39,7 @@ export default class IdcSummary extends React.Component
             </Form.Field>
             <br/>
 
-            <Form.Field>
-              <label >DC (Drop) Location</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>Trenton, NJ</label>
-            </Form.Field>
-            <br/>
+
 
 
           </Form>
@@ -52,6 +48,11 @@ export default class IdcSummary extends React.Component
           <Grid.Column width={8}>
 
           <Form>
+          <Form.Field>
+            <label >DC (Drop) Location</label>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>Trenton, NJ</label>
+          </Form.Field>
+          <br/>
 
           <Form.Field>
             <label >Vehicle</label>
@@ -72,18 +73,6 @@ export default class IdcSummary extends React.Component
             </Form.Field>
             <br/>
 
-            <Form.Field>
-              <label >Temp Recorded (Inbound)</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>50°F (10°C)</label>
-
-            </Form.Field>
-            <br/>
-
-            <Form.Field>
-              <label >Temp Recorded (Inbound)</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>60%</label>
-
-            </Form.Field>
           </Form>
           </Grid.Column>
         </Grid.Row>

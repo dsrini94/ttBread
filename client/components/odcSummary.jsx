@@ -24,7 +24,7 @@ export default class OdcSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>TimBrothers Food Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>Global Fashion Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -32,11 +32,7 @@ export default class OdcSummary extends React.Component
                 <label className="headers" style={{fontSize:'20px'}}>Trenton, NJ</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Store (Drop) Location</label>
-                <label className="headers" style={{fontSize:'20px'}}>New Brunswick, N</label>
-              </Form.Field>
-              <br/>
+
 
 
               </Form>
@@ -44,6 +40,11 @@ export default class OdcSummary extends React.Component
             <Grid.Column width={8}>
               <Form>
               <br/>
+              <br/>
+              <Form.Field>
+                <label >Store (Drop) Location</label>
+                <label className="headers" style={{fontSize:'20px'}}>New Brunswick, N</label>
+              </Form.Field>
               <br/>
               <Form.Field>
                 <label >Vehicle</label>
@@ -60,15 +61,6 @@ export default class OdcSummary extends React.Component
                 <label className="headers" style={{fontSize:'20px'}}>2:30:00 PM</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Temp Recorded (Outbound)</label>
-                <label className="headers" style={{fontSize:'20px'}}>50°F (10°C)</label>
-              </Form.Field>
-              <br/>
-              <Form.Field>
-                <label >Humidity Recorded (Outbound)</label>
-                <label className="headers" style={{fontSize:'20px'}}>60% </label>
-              </Form.Field>
               </Form>
             </Grid.Column>
           </Grid.Row>

@@ -29,7 +29,7 @@ export default class Odc extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Food Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Global Fashion Logistics</label>
             </Form.Field>
             <br/>
 
@@ -39,10 +39,7 @@ export default class Odc extends React.Component
             </Form.Field>
             <br/>
 
-            <Form.Field>
-              <label >Store (Drop) Location</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>New Brunswick, N</label>
-            </Form.Field>
+
           </Form>
           </Grid.Column>
 
@@ -51,10 +48,16 @@ export default class Odc extends React.Component
           <Form>
 
           <Form.Field>
+            <label >Store (Drop) Location</label>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>New Brunswick, N</label>
+          </Form.Field>
+          <br/>
+
+          <Form.Field>
             <label >Vehicle</label>
             <label className="headers" style={{fontSize:'20px',color:'black'}}>XIJ 2THJ</label>
           </Form.Field>
-
+          <br/>
           <Form.Field>
             <label >DC Dispatch -  Date </label>
             <input type='date' value="2018-01-07"/>
@@ -65,15 +68,6 @@ export default class Odc extends React.Component
               <input defaultValue="2:30:00 PM" />
             </Form.Field>
 
-            <Form.Field>
-              <label >Temp Recorded (Outbound)</label>
-              <input defaultValue="50°F" />
-            </Form.Field>
-
-            <Form.Field>
-              <label >Humidity Recorded (Outbound)</label>
-              <input defaultValue="60%" />
-            </Form.Field>
           </Form>
           </Grid.Column>
         </Grid.Row>

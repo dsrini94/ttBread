@@ -109,12 +109,12 @@ export default class Retailer extends React.Component
               <span className='headers' style={{color:'black'}}>Blockchain Address</span><br/>
               </center>
               <div style={{marginLeft:'25px'}}>
-              <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
-                <span>7th Jan 2018,Sun  |FoodHaul Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
+                <span>Product Route :</span><br/>
+                <span>7th Jan 2018,Sun  |Manufacturer| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
+                <span>7th Jan 2018,Sun  |The Apparel Logistics Group| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
                 <span>7th Jan 2018,Sun  |Distribution Centre| 3LifsmHu5HTmvcR8tow13fVfBSFW1s4mrP</span><br/><br/>
-                <span>7th Jan 2018,Sun  |TimBrothers Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD</span><br/><br/>
-                <span>7th Jan 2018,Sun  |Retailer| 1bbwUkiTcMd2QYt1QMFELf3oJYui3jYahD</span>
+                <span>7th Jan 2018,Sun  |Global Fashion Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD</span><br/><br/>
+                <span>7th Jan 2018,Sun  |Retailer| 1bbwUkiTcMd2QYt1QMFELf3oJYui3jYahD</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>

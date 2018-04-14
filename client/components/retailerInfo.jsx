@@ -29,7 +29,7 @@ export default class RetailerInfo extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>TimBrothers Food Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Global Fashion Logistics</label>
             </Form.Field>
             <br/>
 
@@ -67,13 +67,13 @@ export default class RetailerInfo extends React.Component
             </Form.Field>
 
             <Form.Field>
-              <label >Average Temperature Maintained </label>
-              <input defaultValue="50°F" />
+              <label >Wash</label>
+              <input defaultValue="Gentle Wash" />
             </Form.Field>
 
             <Form.Field>
-              <label >Average Humidity Maintained </label>
-              <input defaultValue="60%" />
+              <label >Iron</label>
+              <input defaultValue="Meium Iron" />
             </Form.Field>
           </Form>
           </Grid.Column>
