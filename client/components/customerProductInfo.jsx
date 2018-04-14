@@ -183,31 +183,31 @@ export default class CustomerInfo extends React.Component {
           </Grid.Column>
         </Grid.Row>
 
-        {
-        //   <Grid.Row>
-        //   <Grid.Column width={16}>
-        //     <Header>
-        //       <span className="headers" style={{
-        //           color: '#1CB084',
-        //           fontSize: '15px'
-        //         }}>Cotton Information</span>
-        //     </Header>
-        //     <Wheat/>
-        //   </Grid.Column>
-        // </Grid.Row>
-        //
-        // <Grid.Row>
-        //   <Grid.Column width={16}>
-        //     <Header>
-        //       <span className="headers" style={{
-        //           color: '#1CB084',
-        //           fontSize: '15px'
-        //         }}>Polyester Information</span>
-        //     </Header>
-        //     <Milk/>
-        //   </Grid.Column>
-        // </Grid.Row>
-      }
+
+          <Grid.Row>
+          <Grid.Column width={16}>
+            <Header>
+              <span className="headers" style={{
+                  color: '#1CB084',
+                  fontSize: '15px'
+                }}>Cotton Information</span>
+            </Header>
+            <Wheat/>
+          </Grid.Column>
+        </Grid.Row>
+
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <Header>
+              <span className="headers" style={{
+                  color: '#1CB084',
+                  fontSize: '15px'
+                }}>Polyester Information</span>
+            </Header>
+            <Milk/>
+          </Grid.Column>
+        </Grid.Row>
+
 
         {
         //   <Grid.Row>

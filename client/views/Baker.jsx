@@ -7,9 +7,25 @@ export default class Baker extends React.Component
   render()
   {
     return(
-      <div style={{position:'relative'}}>
-        <Image style={{width:window.innerWidth}} src='./../../images/manu.jpeg' />
-        <center><Header style={{fontSize:'100px',position:'absolute',top:'15%',left:'27%',color:'white'}}><span className="heroText">Manufacturer</span></Header></center>
+      <div style={{marginTop:"20px"}}>
+      <Grid>
+        <Grid.Row>
+          <Grid.Column width={2} />
+          <Grid.Column width={12}>
+          <Segment inverted style={{backgroundColor:"#676b72"}} >
+            <Header as='h2' style={{
+                textAlign: 'center',
+                margin:'0px',
+                border:'none'
+              }}>
+              <span className="headers">manufacturer</span>
+            </Header>
+          </Segment>
+          </Grid.Column>
+          <Grid.Column width={2} />
+        </Grid.Row>
+      </Grid>
+
         <Header as='h1' style={{textAlign:'center'}}><span className="headers" style={{color:'#676b72'}}>Select a Product</span></Header>
         <br/>
         <br/>

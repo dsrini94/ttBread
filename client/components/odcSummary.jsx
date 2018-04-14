@@ -43,7 +43,7 @@ export default class OdcSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Store (Drop) Location</label>
-                <label className="headers" style={{fontSize:'20px'}}>New Brunswick, N</label>
+                <label className="headers" style={{fontSize:'20px'}}>Miami,FL</label>
               </Form.Field>
               <br/>
               <Form.Field>

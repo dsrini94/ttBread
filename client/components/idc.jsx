@@ -22,7 +22,7 @@ export default class Idc extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Shipment ID (Bakery - DC)</label>
+              <label >Shipment ID (outlet - DC)</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>SHIP275</label>
             </Form.Field>
             <br/>
@@ -34,7 +34,7 @@ export default class Idc extends React.Component
             <br/>
 
             <Form.Field>
-              <label >Bakery (Pick-up) Location</label>
+              <label >outlet (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>

@@ -36,11 +36,7 @@ export default class Wheat extends React.Component
                   <label className="headers" style={{fontSize:'17px',color:'black'}}>ING3477488</label>
                 </Form.Field>
                 <br/>
-                <Form.Field>
-                  <label >Product Name</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>Gold Mill Organic Whole Wheat Flour</label>
-                </Form.Field>
-                <br/>
+
                 <Form.Field>
                   <label >Farm Name</label>
                   <label className="headers" style={{fontSize:'17px',color:'black'}}>Eagle Farms , Ames, IA</label>
@@ -55,14 +51,11 @@ export default class Wheat extends React.Component
                 </Form.Field>
                 <br/>
                 <Form.Field>
-                  <label >Wheat Type</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>USDA Organic</label>
+                  <label >Cotton Type</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>SHANKER-6 R/G</label>
                 </Form.Field>
                 <br/>
-                <Form.Field>
-                  <label >Harvest Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>9th Sep, 2017</label>
-                </Form.Field>
+
                 </Form>
               </Grid.Column>
               <Grid.Column width={4}>
@@ -73,22 +66,38 @@ export default class Wheat extends React.Component
                 </Form.Field>
                 <br/>
                 <Form.Field>
-                  <label >Best Before Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>9th Sep, 2018</label>
+                  <label >Harvest Date</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>15th Aug, 2017</label>
                 </Form.Field>
+                {
+                //   <Form.Field>
+                //   <label >Best Before Date</label>
+                //   <label className="headers" style={{fontSize:'17px',color:'black'}}>9th Sep, 2018</label>
+                // </Form.Field>
+              }
                 </Form>
               </Grid.Column>
               <Grid.Column width={4}>
                 <Form>
                 <Form.Field>
-                  <label >StorageTemp</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>59°F (15°C)</label>
+                  <label>Product Name</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>Chino</label>
                 </Form.Field>
                 <br/>
-                <Form.Field>
-                  <label >Storage Humidity</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>50-70% (Relative Humidity)</label>
-                </Form.Field>
+
+                {
+                //   <Form.Field>
+                //   <label >StorageTemp</label>
+                //   <label className="headers" style={{fontSize:'17px',color:'black'}}>59°F (15°C)</label>
+                // </Form.Field>
+              }
+                <br/>
+                {
+                //   <Form.Field>
+                //   <label >Storage Humidity</label>
+                //   <label className="headers" style={{fontSize:'17px',color:'black'}}>50-70% (Relative Humidity)</label>
+                // </Form.Field>
+              }
                 </Form>
               </Grid.Column>
             </Grid.Row>

@@ -34,7 +34,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Store (Drop) Location</label>
-                <label className="headers" style={{fontSize:'20px'}}>New Brunswick, N</label>
+                <label className="headers" style={{fontSize:'20px'}}>Miami,FL</label>
               </Form.Field>
               <br/>
 
@@ -51,22 +51,22 @@ export default class LogisticssSummary2 extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Bakery Pick-up - Date </label>
+                <label >DC Pick-up - Date </label>
                 <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Bakery Pick-up - Time</label>
+                <label >DC Pick-up - Time</label>
                 <label className="headers" style={{fontSize:'20px'}}>2:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >DC Drop -  Date </label>
+                <label >Store Drop -  Date </label>
                 <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >DC Drop -  Time</label>
+                <label >Store Drop -  Time</label>
                 <label className="headers" style={{fontSize:'20px'}}>3:40:00 PM</label>
               </Form.Field>
               </Form>

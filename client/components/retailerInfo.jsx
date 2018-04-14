@@ -41,7 +41,7 @@ export default class RetailerInfo extends React.Component
 
             <Form.Field>
               <label >Store (Drop) Location</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>New Brunswick, N</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Miami,FL</label>
             </Form.Field>
 
           </Form>
@@ -73,7 +73,7 @@ export default class RetailerInfo extends React.Component
 
             <Form.Field>
               <label >Iron</label>
-              <input defaultValue="Meium Iron" />
+              <input defaultValue="Medium Iron" />
             </Form.Field>
           </Form>
           </Grid.Column>

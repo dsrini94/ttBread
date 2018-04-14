@@ -140,7 +140,7 @@ handleModal()
               </center>
               <div style={{marginLeft:'25px'}}>
               <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
+                <span>7th Jan 2018,Sun  |manufacturer| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>

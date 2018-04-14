@@ -31,11 +31,12 @@ export default class BakerInfoPreview extends React.Component
                 </Form.Field>
                 <br/>
 
-                <Form.Field>
-                  <label >Bake Date</label>
-                  <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
-                </Form.Field>
-                <br/>
+                {// <Form.Field>
+                //   <label >Bake Date</label>
+                //   <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                // </Form.Field>
+                // <br/>
+              }
 
                 <Form.Field>
                   <label >Packing Date</label>

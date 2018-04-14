@@ -106,7 +106,7 @@ export default class CreateInfo extends React.Component {
             <Header as='h2'>
               <span className="headers" style={{
                   color: '#676b72'
-                }}>Bread Information</span>
+                }}>T-Shirt Information</span>
             </Header>
             <center></center>
           </Grid.Column>
