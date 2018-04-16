@@ -42,11 +42,6 @@ export default class CustomerInfo extends React.Component {
     } else if (value == 'dc') {
       var temp = (<Image style={{height:'450px'}} src='./../../images/2map.png'/>);
 
-      var temp = (<Image src='./../../images/bak.jpg'/>);
-      this.setState({map: temp, open: true, headding: 'Map', icon: 'world'})
-    } else if (value == 'dc') {
-      var temp = (<Image src='./../../images/dc.jpg'/>);
-
       this.setState({map: temp, open: true, headding: 'Map', icon: 'world'})
     } else if (value == 'temp') {
       var temp = (<div>
@@ -109,8 +104,6 @@ export default class CustomerInfo extends React.Component {
                   <Statistic size='mini'  color='yellow' inverted style={{marginLeft:'15px',marginRight:'15px'}}>
 
                     <Statistic.Value >Assembly Address</Statistic.Value>
-
-                    <Statistic.Value >Assembly Location Address</Statistic.Value>
 
                     <Statistic.Label style={{fontSize:'12px'}}>100, ABC Street, 08540</Statistic.Label>
                   </Statistic>
