@@ -24,7 +24,7 @@ export default class Shipping extends React.Component
       <Accordion styled fluid>
         <Accordion.Title active={this.state.activeIndex === 0} index={0} onClick={this.handleClick.bind(this)}>
           <Icon name='dropdown' />
-          Bakery-DC
+          Outlet-DC
         </Accordion.Title>
         <Accordion.Content active={this.state.activeIndex === 0} >
           <Grid>
@@ -32,26 +32,23 @@ export default class Shipping extends React.Component
             <Grid.Column width={4}>
             <Form>
               <Form.Field>
-                <label >Shipment ID(Bakery-DC)</label>
+                <label >Shipment ID(Outlet-DC)</label>
                 <label className="headers" style={{fontSize:'17px',color:'black'}}>SHIP275</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>FoodHaul Logistics</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>The Apparel Logistics Group</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Vehicle</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>CTF 276H</label>
-              </Form.Field>
+
               </Form>
             </Grid.Column>
 
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label >Bakery (Pick-up) Location</label>
+              <label >Outlet (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'17px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>
@@ -67,39 +64,43 @@ export default class Shipping extends React.Component
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label >Bakery Pick-up - Date </label>
+              <label >Outlet Pick-up - Date </label>
               <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Bakery Pick-up - Time</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>10:30:00 AM</label>
+              <label >Outlet Pick-up - Time</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>10:30:00 PM</label>
             </Form.Field>
             <br/>
             <Form.Field>
               <label >DC Drop -  Date </label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>8th Jan, 2018</label>
             </Form.Field>
-            <br/>
-              <Form.Field>
-                <label >DC Drop-Time</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>12:30 PM</label>
-              </Form.Field>
+
               </Form>
             </Grid.Column>
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label >Average Temperature Maintained</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>50 °F (10 °C)</label>
+              <label >Vehicle</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>CTF 276H</label>
             </Form.Field>
             <br/>
-            <Form.Field>
-              <label >Average Humidity Maintained</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>60% (Relative Humidity)</label>
-            </Form.Field>
-
-
+              <Form.Field>
+                <label >DC Drop-Time</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>10:30 AM</label>
+              </Form.Field>
+            {// <Form.Field>
+            //   <label >Average Temperature Maintained</label>
+            //   <label className="headers" style={{fontSize:'17px',color:'black'}}>50 °F (10 °C)</label>
+            // </Form.Field>
+            // <br/>
+            // <Form.Field>
+            //   <label >Average Humidity Maintained</label>
+            //   <label className="headers" style={{fontSize:'17px',color:'black'}}>60% (Relative Humidity)</label>
+            // </Form.Field>
+          }
               </Form>
             </Grid.Column>
           </Grid.Row>

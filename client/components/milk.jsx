@@ -64,7 +64,7 @@ export default class Milk extends React.Component
                 <Form>
                 <Form.Field>
                   <label >Packing Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>5th Jan, 2018</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>5th Oct, 2018</label>
                 </Form.Field>
                 {// <Form.Field>
                 //   <label >Nutrition Details</label>

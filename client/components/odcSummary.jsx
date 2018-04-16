@@ -53,7 +53,7 @@ export default class OdcSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >DC Dispatch -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>8th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>

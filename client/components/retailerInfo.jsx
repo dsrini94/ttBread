@@ -58,7 +58,7 @@ export default class RetailerInfo extends React.Component
 
           <Form.Field>
             <label >Store Receiving -  Date </label>
-            <input type='date' value="2018-01-07"/>
+            <input type='date' value="2018-01-10"/>
           </Form.Field>
 
             <Form.Field>

@@ -94,20 +94,20 @@ export default class CustomerInfo extends React.Component {
               <Grid.Row>
                 <Grid.Column width={4}>
                   <Statistic inverted color='yellow' size='mini'>
-                    <Statistic.Value  >Medium Iron</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>Iron</Statistic.Label>
+                    <Statistic.Value >Iron</Statistic.Value>
+                    <Statistic.Label style={{fontSize:'12px'}}>Medium Iron</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
                 <Grid.Column width={7}>
                   <Statistic size='mini'  color='yellow' inverted style={{marginLeft:'15px',marginRight:'15px'}}>
-                    <Statistic.Value >100, ABC Street, 08540</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>Assembly Location Address</Statistic.Label>
+                    <Statistic.Value >Assembly Location Address</Statistic.Value>
+                    <Statistic.Label style={{fontSize:'12px'}}>100, ABC Street, 08540</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
                 <Grid.Column width={5}>
                   <Statistic size='mini'  color='yellow' inverted>
-                    <Statistic.Value >Gentle Wash</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>Wash</Statistic.Label>
+                    <Statistic.Value > Wash</Statistic.Value>
+                    <Statistic.Label style={{fontSize:'12px'}}>Gentle Wash</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
               </Grid.Row>
@@ -177,7 +177,7 @@ export default class CustomerInfo extends React.Component {
                 <label className="headers" style={{
                     fontSize: '17px',
                     color: 'black'
-                  }}>10 Pieces</label>
+                  }}>A pack of 2</label>
               </Form.Field>
             </Form>
           </Grid.Column>
@@ -209,81 +209,73 @@ export default class CustomerInfo extends React.Component {
         </Grid.Row>
 
 
-        {
-        //   <Grid.Row>
-        //   <Grid.Column width={16}>
-        //     <Header>
-        //       <span className="headers" style={{
-        //           color: '#1CB084',
-        //           fontSize: '25px'
-        //         }}>Shipping Info</span>
-        //     </Header>
-        //   </Grid.Column>
-        // </Grid.Row>
-      }
+          <Grid.Row>
+          <Grid.Column width={16}>
+            <Header>
+              <span className="headers" style={{
+                  color: '#1CB084',
+                  fontSize: '25px'
+                }}>Shipping Info</span>
+            </Header>
+          </Grid.Column>
+        </Grid.Row>
 
-        {
-        //   <Grid.Row>
-        //   <Grid.Column width={1}>
-        //     <Button icon color="teal" style={{
-        //         marginBottom: '5px'
-        //       }} onClick={this.handleMapModal.bind(this, 'bakery')}>
-        //       <Icon name='world'/>
-        //     </Button>
-        //   </Grid.Column>
-        //   <Grid.Column width={15}>
-        //     <Shipping/>
-        //   </Grid.Column>
-        // </Grid.Row>
-      }
+          <Grid.Row>
+          <Grid.Column width={1}>
+            <Button icon color="teal" style={{
+                marginBottom: '5px'
+              }} onClick={this.handleMapModal.bind(this, 'bakery')}>
+              <Icon name='world'/>
+            </Button>
+          </Grid.Column>
+          <Grid.Column width={15}>
+            <Shipping/>
+          </Grid.Column>
+        </Grid.Row>
 
-      {
-        // <Grid.Row >
-        //   <Grid.Column width={1}>
-        //     <Button icon color="teal" style={{
-        //         marginBottom: '5px'
-        //       }} onClick={this.handleMapModal.bind(this, 'dc')}>
-        //       <Icon name='world'/>
-        //     </Button>
-        //   </Grid.Column>
-        //   <Grid.Column width={15}>
-        //     <Shipping2/>
-        //   </Grid.Column>
-        // </Grid.Row>
-      }
+        <Grid.Row >
+          <Grid.Column width={1}>
+            <Button icon color="teal" style={{
+                marginBottom: '5px'
+              }} onClick={this.handleMapModal.bind(this, 'dc')}>
+              <Icon name='world'/>
+            </Button>
+          </Grid.Column>
+          <Grid.Column width={15}>
+            <Shipping2/>
+          </Grid.Column>
+        </Grid.Row>
 
-        {
-        //   <Grid.Row >
-        //   <Grid.Column width={4}>
-        //     <center>
-        //       <span className="headers" style={{
-        //           color: 'black'
-        //         }}>Temperature</span>
-        //       <br/>
-        //       <br/>
-        //       <Button icon as={Link} to='/temp' color="teal" style={{
-        //           marginBottom: '5px'
-        //         }}>
-        //         <Icon name='thermometer half'/>
-        //       </Button>
-        //     </center>
-        //   </Grid.Column>
-        //   <Grid.Column width={4}>
-        //     <center>
-        //       <span className="headers" style={{
-        //           color: 'black'
-        //         }}>Humidity</span>
-        //       <br/>
-        //       <br/>
-        //       <Button as={Link} to='/humid' icon color="teal" style={{
-        //           marginBottom: '5px'
-        //         }}>
-        //         <Icon name='thermometer half'/>
-        //       </Button>
-        //     </center>
-        //   </Grid.Column>
-        // </Grid.Row>
-}
+          <Grid.Row >
+          <Grid.Column width={4}>
+            <center>
+              <span className="headers" style={{
+                  color: 'black'
+                }}>Temperature</span>
+              <br/>
+              <br/>
+              <Button icon as={Link} to='/temp' color="teal" style={{
+                  marginBottom: '5px'
+                }}>
+                <Icon name='thermometer half'/>
+              </Button>
+            </center>
+          </Grid.Column>
+          <Grid.Column width={4}>
+            <center>
+              <span className="headers" style={{
+                  color: 'black'
+                }}>Humidity</span>
+              <br/>
+              <br/>
+              <Button as={Link} to='/humid' icon color="teal" style={{
+                  marginBottom: '5px'
+                }}>
+                <Icon name='thermometer half'/>
+              </Button>
+            </center>
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
 
       <Modal open={this.state.open} basic="basic">

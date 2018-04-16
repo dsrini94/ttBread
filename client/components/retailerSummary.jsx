@@ -52,7 +52,7 @@ export default class RetailerSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Store Receiving -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>10th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>

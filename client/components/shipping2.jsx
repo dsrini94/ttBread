@@ -39,13 +39,10 @@ export default class Shipping2 extends React.Component
             <br/>
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>TimBrothers Logistics</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>Global Fashion Logistics</label>
             </Form.Field>
             <br/>
-            <Form.Field>
-              <label >Vehicle</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>XIJ 2THJ</label>
-            </Form.Field>
+
 
 
               </Form>
@@ -60,7 +57,7 @@ export default class Shipping2 extends React.Component
             <br/>
             <Form.Field>
               <label >Store (Drop) Location</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>New Brunswick, N</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>Miami, FL</label>
             </Form.Field>
 
             <br/>
@@ -73,43 +70,44 @@ export default class Shipping2 extends React.Component
 
               <Form.Field>
                 <label >DC Pick-up - Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>8th Jan, 2018</label>
               </Form.Field>
 
               <br/>
               <Form.Field>
                 <label >DC Pick-up - Time</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>6:30:00 PM</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>2:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >Store Drop -  Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>7th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>10th Jan, 2018</label>
               </Form.Field>
-              <br/>
-              <Form.Field>
-                <label >Store Drop -  Time</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>10:43:00 PM</label>
-              </Form.Field>
+
 
               </Form>
             </Grid.Column>
             <Grid.Column width={4}>
             <Form>
             <Form.Field>
-              <label >Average Temperature Maintained </label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>50°F (10°C)</label>
+              <label >Vehicle</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>XIJ 2THJ</label>
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Average Humidity Maintained</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>60% (Relative Humidity)</label>
+              <label >Store Drop -  Time</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>03:40:00 PM</label>
             </Form.Field>
-
-
-
-
-
+            {// <Form.Field>
+            //   <label >Average Temperature Maintained </label>
+            //   <label className="headers" style={{fontSize:'17px',color:'black'}}>50°F (10°C)</label>
+            // </Form.Field>
+            // <br/>
+            // <Form.Field>
+            //   <label >Average Humidity Maintained</label>
+            //   <label className="headers" style={{fontSize:'17px',color:'black'}}>60% (Relative Humidity)</label>
+            // </Form.Field>
+          }
 
               <br/>
 

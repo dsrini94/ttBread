@@ -64,17 +64,17 @@ export default class LogisticsInfo extends React.Component
 
             <Form.Field>
               <label >Outlet Pick-up - Time</label>
-              <input defaultValue="10:30:00 AM" />
+              <input defaultValue="10:30:00 PM" />
             </Form.Field>
 
             <Form.Field>
               <label >DC Drop -  Date </label>
-              <input type='date' value="2018-01-07"/>
+              <input type='date' value="2018-01-08"/>
             </Form.Field>
 
             <Form.Field>
               <label >DC Drop -  Time</label>
-              <input defaultValue="12:30:00 PM" />
+              <input defaultValue="10:30:00 AM" />
             </Form.Field>
 
             <Form.Field>

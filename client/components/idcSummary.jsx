@@ -62,13 +62,13 @@ export default class IdcSummary extends React.Component
           <br/>
           <Form.Field>
             <label >DC Receiving -  Date </label>
-            <label className="headers" style={{fontSize:'20px',color:'black'}}>01/07/2018</label>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>01/08/2018</label>
           </Form.Field>
           <br/>
 
             <Form.Field>
               <label >DC Receiving - Time</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>12:30:00 PM</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>10:30:00 AM</label>
 
             </Form.Field>
             <br/>

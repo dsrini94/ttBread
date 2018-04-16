@@ -60,7 +60,7 @@ export default class Odc extends React.Component
           <br/>
           <Form.Field>
             <label >DC Dispatch -  Date </label>
-            <input type='date' value="2018-01-07"/>
+            <input type='date' value="2018-01-08"/>
           </Form.Field>
 
             <Form.Field>

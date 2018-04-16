@@ -62,7 +62,7 @@ export default class LogisticsInfo2 extends React.Component
 
           <Form.Field>
             <label >DC Pick-up - Date </label>
-            <input type='date' value="2018-01-07"/>
+            <input type='date' value="2018-01-08"/>
           </Form.Field>
 
             <Form.Field>
@@ -72,7 +72,7 @@ export default class LogisticsInfo2 extends React.Component
 
             <Form.Field>
               <label >Store Drop -  Date </label>
-              <input type='date' value="2018-01-07"/>
+              <input type='date' value="2018-01-10"/>
             </Form.Field>
 
             <Form.Field>

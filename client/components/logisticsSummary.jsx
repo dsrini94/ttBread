@@ -55,17 +55,17 @@ export default class LogisticssSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Outlet Pick-up - Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>10:30:00 AM</label>
+                <label className="headers" style={{fontSize:'20px'}}>10:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >DC Drop -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>8th Jan, 2018</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >DC Drop -  Time</label>
-                <label className="headers" style={{fontSize:'20px'}}>12:30:00 PM</label>
+                <label className="headers" style={{fontSize:'20px'}}>10:30:00 AM</label>
               </Form.Field>
               <br/>
               <Form.Field>

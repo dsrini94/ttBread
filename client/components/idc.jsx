@@ -22,7 +22,7 @@ export default class Idc extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Shipment ID (outlet - DC)</label>
+              <label >Shipment ID (Outlet - DC)</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>SHIP275</label>
             </Form.Field>
             <br/>
@@ -34,7 +34,7 @@ export default class Idc extends React.Component
             <br/>
 
             <Form.Field>
-              <label >outlet (Pick-up) Location</label>
+              <label >Outlet (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>
@@ -63,12 +63,12 @@ export default class Idc extends React.Component
 
           <Form.Field>
             <label >DC Receiving -  Date </label>
-            <input type='date' value="2018-01-07"/>
+            <input type='date' value="2018-01-08"/>
           </Form.Field>
 
             <Form.Field>
               <label >DC Receiving -  Time</label>
-              <input defaultValue="12:30:00 PM" />
+              <input defaultValue="10:30:00 AM" />
             </Form.Field>
 
           </Form>
