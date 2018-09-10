@@ -14,7 +14,8 @@ export default class BakerInfo extends React.Component {
     this.state={
       slidingIndex:0,
       buttonComponents:'',
-      open:false
+      open:false,
+      date:''
   }
 }
 
@@ -25,6 +26,10 @@ componentDidMount()
     <Button positive floated="right" circular onClick={this.handleNextSlider.bind(this)}>Next</Button>
     </div>
   )
+
+  var today = new Date();
+  var day = today.getDate() - 5 ;
+  this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2)});
   this.setState({buttonComponents:temp})
 }
 
@@ -140,7 +145,7 @@ handleModal()
               </center>
               <div style={{marginLeft:'25px'}}>
               <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
+                <span>{this.state.date},Wed  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>

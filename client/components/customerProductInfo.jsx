@@ -111,7 +111,7 @@ export default class CustomerInfo extends React.Component {
                 <Grid.Column width={5}>
                   <Statistic size='mini'  color='yellow' inverted>
                     <Statistic.Value > Exp Date</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>best before 10 days from manufacture</Statistic.Label>
+                    <Statistic.Label style={{fontSize:'12px'}}>best before 15 days from manufacture</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
               </Grid.Row>

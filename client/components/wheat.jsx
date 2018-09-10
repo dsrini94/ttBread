@@ -62,12 +62,12 @@ export default class Wheat extends React.Component
                 <Form>
                 <Form.Field>
                   <label >Packing Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th March, 2018</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>2018-03-10</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
                   <label >Harvest Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>25th Feb, 2018</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>2018-02-25</label>
                 </Form.Field>
                 {
                 //   <Form.Field>

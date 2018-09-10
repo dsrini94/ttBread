@@ -56,7 +56,7 @@ export default class Yeast extends React.Component
                 <br/>
                 <Form.Field>
                   <label >Culture Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th April, 2015</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>2015-04-10</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
@@ -69,12 +69,12 @@ export default class Yeast extends React.Component
                 <Form>
                 <Form.Field>
                   <label >Packing Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th June, 2018</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>2018-06-10</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
                   <label >Best Before Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>09th June, 2019</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>2019-06-09</label>
                 </Form.Field>
                 </Form>
               </Grid.Column>

@@ -18,11 +18,18 @@ export default class DistributionCenter extends React.Component
   constructor()
   {
     super();
-    this.state={slidingIndex:0,butonComponents:'',open:false,dcComponents:'',summaryComponents:'',blockchainId:''}
+    this.state={date:'',slidingIndex:0,butonComponents:'',open:false,dcComponents:'',summaryComponents:'',blockchainId:''}
     this.handleLogin = this.handleLogin.bind(this);
     this.handleNextSlider=this.handleNextSlider.bind(this);
     this.odc = this.odc.bind(this);
     this.idc = this.idc.bind(this);
+  }
+
+  componentDidMount()
+  {
+    var today = new Date();
+    var day = today.getDate() - 5 ;
+    this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2)});
   }
 
   odc()
@@ -39,9 +46,9 @@ export default class DistributionCenter extends React.Component
         </center>
         <div style={{marginLeft:'25px'}}>
         <span>Product Route :</span><br/>
-          <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
-          <span>7th Jan 2018,Sun  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
-          <span>7th Jan 2018,Sun  |Distribution Centre| 3LifsmHu5HTmvcR8tow13fVfBSFW1s4mrP</span><br/>
+          <span>{this.state.date},Wed  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
+          <span>{this.state.date},Wed  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
+          <span>{this.state.date},Wed  |Distribution Centre| 3LifsmHu5HTmvcR8tow13fVfBSFW1s4mrP</span><br/>
           </div>
           </div>
     )

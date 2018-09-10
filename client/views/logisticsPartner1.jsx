@@ -13,7 +13,7 @@ export default class LogisticssPartner1 extends React.Component
   constructor()
   {
     super();
-    this.state={slidingIndex:0,butonComponents:'',open:false}
+    this.state={slidingIndex:0,butonComponents:'',open:false,date:''}
     this.handleLogin = this.handleLogin.bind(this);
     this.handleNextSlider=this.handleNextSlider.bind(this)
   }
@@ -29,6 +29,13 @@ export default class LogisticssPartner1 extends React.Component
       <Button positive floated="right" circular onClick={()=>this.handleNextSlider()}>Next</Button>
     );
     this.setState({slidingIndex:(this.state.slidingIndex+1),butonComponents:temp})
+  }
+
+  componentDidMount()
+  {
+    var today = new Date();
+    var day = today.getDate() - 5 ;
+    this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2)});
   }
 
   handlePrevSlider()
@@ -110,8 +117,8 @@ export default class LogisticssPartner1 extends React.Component
               </center>
               <div style={{marginLeft:'25px'}}>
               <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
-                <span>7th Jan 2018,Sun  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/>
+                <span>{this.state.date},Wed  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
+                <span>{this.state.date},Wed  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>
