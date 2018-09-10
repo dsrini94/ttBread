@@ -3,6 +3,23 @@ import {Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 
 
 export default class RetailerInfo extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 2;
+     var day = today.getDate() ;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -29,7 +46,7 @@ export default class RetailerInfo extends React.Component
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>Global Fashion Logistics</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Global Food Logistics</label>
             </Form.Field>
             <br/>
 
@@ -43,12 +60,7 @@ export default class RetailerInfo extends React.Component
               <label >Store (Drop) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Miami, FL</label>
             </Form.Field>
-            <br/>
 
-            <Form.Field>
-              <label >Current Temperature</label>
-              <Input focus="focus" placeholder='Product Name' defaultValue='44°F'/>
-            </Form.Field>
 
           </Form>
           </Grid.Column>
@@ -64,7 +76,7 @@ export default class RetailerInfo extends React.Component
 
           <Form.Field>
             <label >Store Receiving -  Date </label>
-            <input type='date' value="2018-01-10"/>
+            <input type='date' value={this.state.date}/>
           </Form.Field>
 
             <Form.Field>
@@ -73,18 +85,13 @@ export default class RetailerInfo extends React.Component
             </Form.Field>
 
             <Form.Field>
-              <label >Wash</label>
-              <input defaultValue="Gentle Wash" />
-            </Form.Field>
-
-            <Form.Field>
-              <label >Iron</label>
-              <input defaultValue="Medium Iron" />
+              <label >Current Temperature</label>
+              <Input focus="focus" placeholder='Product Name' defaultValue='44°F'/>
             </Form.Field>
 
             <Form.Field>
               <label >Current Humidity</label>
-              <Input focus="focus" placeholder='Product Name' defaultValue='56'/>
+              <Input focus="focus" placeholder='Product Name' defaultValue='56 %'/>
             </Form.Field>
           </Form>
           </Grid.Column>

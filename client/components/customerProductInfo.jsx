@@ -96,22 +96,22 @@ export default class CustomerInfo extends React.Component {
               <Grid.Row>
                 <Grid.Column width={4}>
                   <Statistic inverted color='yellow' size='mini'>
-                    <Statistic.Value >Iron</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>Medium Iron</Statistic.Label>
+                    <Statistic.Value >Bread</Statistic.Value>
+                    <Statistic.Label style={{fontSize:'12px'}}>Wheat Bread</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
                 <Grid.Column width={7}>
                   <Statistic size='mini'  color='yellow' inverted style={{marginLeft:'15px',marginRight:'15px'}}>
 
-                    <Statistic.Value >Assembly Address</Statistic.Value>
+                    <Statistic.Value >Manufactured In</Statistic.Value>
 
                     <Statistic.Label style={{fontSize:'12px'}}>100, ABC Street, 08540</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
                 <Grid.Column width={5}>
                   <Statistic size='mini'  color='yellow' inverted>
-                    <Statistic.Value > Wash</Statistic.Value>
-                    <Statistic.Label style={{fontSize:'12px'}}>Gentle Wash</Statistic.Label>
+                    <Statistic.Value > Exp Date</Statistic.Value>
+                    <Statistic.Label style={{fontSize:'12px'}}>best before 10 days from manufacture</Statistic.Label>
                   </Statistic>
                 </Grid.Column>
               </Grid.Row>
@@ -149,7 +149,7 @@ export default class CustomerInfo extends React.Component {
           <Grid.Column width={4}>
             <Form>
               <Form.Field>
-                <label >Manufactured/Assembled In</label>
+                <label >Baked In</label>
                 <label className="headers" style={{
                     fontSize: '17px',
                     color: 'black'
@@ -167,7 +167,7 @@ export default class CustomerInfo extends React.Component {
             <label className="headers" style={{
                 fontSize: '17px',
                 color: 'black'
-              }}>HB T-Shirt</label>
+              }}>HB Bread</label>
           </Form.Field>
           </Form>
 
@@ -181,7 +181,7 @@ export default class CustomerInfo extends React.Component {
                 <label className="headers" style={{
                     fontSize: '17px',
                     color: 'black'
-                  }}>A pack of 2</label>
+                  }}>2 Loafs</label>
               </Form.Field>
             </Form>
           </Grid.Column>
@@ -194,9 +194,9 @@ export default class CustomerInfo extends React.Component {
               <span className="headers" style={{
                   color: '#1CB084',
                   fontSize: '15px'
-                }}>Cotton Information</span>
+                }}>Yeast Information</span>
             </Header>
-            <Wheat/>
+            <Yeast/>
           </Grid.Column>
         </Grid.Row>
 
@@ -206,9 +206,9 @@ export default class CustomerInfo extends React.Component {
               <span className="headers" style={{
                   color: '#1CB084',
                   fontSize: '15px'
-                }}>Polyester Information</span>
+                }}>Wheat Information</span>
             </Header>
-            <Milk/>
+            <Wheat/>
           </Grid.Column>
         </Grid.Row>
 

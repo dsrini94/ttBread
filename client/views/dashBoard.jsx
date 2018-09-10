@@ -3,9 +3,13 @@ import {Segment, Grid, Card, Icon, Image,Header} from 'semantic-ui-react';
 import {HashRouter, Route, Link} from 'react-router-dom';
 
 export default class DashBoard extends React.Component {
+
+
   render() {
     return (<Segment inverted style={{
-        backgroundColor: '#120426',
+        background: 'url("./../../images/1.jpg")',
+        backgroundSize:'cover',
+        backgroundRepeat: 'no-repeat',
         height:window.innerHeight
       }}>
 
@@ -16,8 +20,8 @@ export default class DashBoard extends React.Component {
           <Grid.Column width={3}>
             <center>
               <Link to='/baker'>
-                <Image src='http://www.vectors4all.net/preview/tailor.jpg' circular style={{width:175,height:175}}/>
-              <Header><span className="headers">HP Manufacturers</span></Header>
+                <Image src='./../../images/backerDashboard.jpeg' circular style={{width:175,height:175}}/>
+              <Header><span className="headers">HB Bakers</span></Header>
               </Link>
             </center>
           </Grid.Column>
@@ -26,7 +30,7 @@ export default class DashBoard extends React.Component {
           <Link to='/log1'>
             <Image src='https://png.pngtree.com/element_origin_min_pic/16/12/14/a136190eee88f74455adb382654c89ab.jpg' circular style={{width:175,height:175}}/>
           </Link>
-            <Header><span className="headers">The Apparel Logistics Group</span></Header>
+            <Header><span className="headers">Fine Foods Logistics</span></Header>
           </center>
           </Grid.Column>
           <Grid.Column width={3}>
@@ -42,7 +46,7 @@ export default class DashBoard extends React.Component {
             <Link to='/log2'>
             <Image src='https://png.pngtree.com/element_origin_min_pic/16/12/14/a136190eee88f74455adb382654c89ab.jpg' circular style={{width:175,height:175}}/>
             </Link>
-            <Header><span className="headers">Global Fashion Logistics</span></Header>
+            <Header><span className="headers">Global Food Logistics</span></Header>
           </center>
           </Grid.Column>
           <Grid.Column width={3}>

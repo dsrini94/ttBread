@@ -78,7 +78,7 @@ export default class LogisticssPartner2 extends React.Component
           <Grid.Column width={4} >
           <center>  <Header as='h1' style={{marginTop:'100px'}}><span className="headers" style={{color:'#0e1e7a'}}>Logistics Partner</span></Header></center>
             <br/>
-            <Image src ='http://carpng.com/wp-content/uploads/full/generic-semi-truck-2238-0.png' />
+            <Image src ='./../../images/truck.png' />
           </Grid.Column>
           <Grid.Column width={8}>
           <SwipeableViews index={this.state.slidingIndex}>
@@ -110,10 +110,10 @@ export default class LogisticssPartner2 extends React.Component
               </center>
               <div style={{marginLeft:'25px'}}>
               <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |Manufacturer| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
-                <span>7th Jan 2018,Sun  |The Apparel Logistics Group| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
+                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
+                <span>7th Jan 2018,Sun  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
                 <span>7th Jan 2018,Sun  |Distribution Centre| 3LifsmHu5HTmvcR8tow13fVfBSFW1s4mrP</span><br/><br/>
-                <span>7th Jan 2018,Sun  |Global Fashion Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD</span><br/>
+                <span>7th Jan 2018,Sun  |Global Food Logistics| 1ab5cmqmvQq8YTREEqcTmW7dfBNuFfgdCD</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>

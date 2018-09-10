@@ -89,7 +89,7 @@ handleModal()
           <Grid.Column width={12}>
           <br/>
           <center>
-            <Segment inverted style={{backgroundColor:'#676b72'}}><Header>T-Shirt Information</Header></Segment>
+            <Segment inverted style={{backgroundColor:'#c1b945'}}><Header>Bread Information</Header></Segment>
           </center>
           </Grid.Column>
           <Grid.Column width={2}/>
@@ -105,9 +105,9 @@ handleModal()
           <br/>
           <br/>
             <center>
-            <Header as='h1'><span className="headers" style={{color:'#676b72',fontSize:'35px',marginLeft:'80px'}}>TShirt</span></Header>
-              <Image src='https://images-na.ssl-images-amazon.com/images/I/71FyTpYC8IL._UX385_.jpg' size='massive' style={{
-                  marginTop: '50px',marginLeft:'45px'
+            <Header as='h1'><span className="headers" style={{color:'#c1b945',fontSize:'35px',marginLeft:'80px'}}>Bread</span></Header>
+              <Image src='./../../images/bread.jpg' size='massive' style={{
+                  marginTop: '30px',marginLeft:'45px'
                 }}/>
             </center>
           </Grid.Column>
@@ -140,7 +140,7 @@ handleModal()
               </center>
               <div style={{marginLeft:'25px'}}>
               <span>Product Route :</span><br/>
-                <span>7th Jan 2018,Sun  |manufacturer| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
+                <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/>
                 </div>
             </Modal.Content>
             <Modal.Actions>

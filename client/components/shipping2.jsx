@@ -6,7 +6,8 @@ export default class Shipping2 extends React.Component
   constructor()
   {
     super();
-    this.state={activeIndex:1}
+    this.state={activeIndex:1,date:'',
+    date1:''}
   }
 
   handleClick()
@@ -17,6 +18,14 @@ export default class Shipping2 extends React.Component
     if(this.state.activeIndex == 0)
           this.setState({activeIndex:1})
   }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 2;
+     var day = today.getDate() - 0;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
 
   render()
   {
@@ -39,7 +48,7 @@ export default class Shipping2 extends React.Component
             <br/>
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'17px',color:'black'}}>Global Fashion Logistics</label>
+              <label className="headers" style={{fontSize:'17px',color:'black'}}>Global Food Logistics</label>
             </Form.Field>
             <br/>
 
@@ -70,7 +79,7 @@ export default class Shipping2 extends React.Component
 
               <Form.Field>
                 <label >DC Pick-up - Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>8th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>{this.state.date1}</label>
               </Form.Field>
 
               <br/>
@@ -81,7 +90,7 @@ export default class Shipping2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Store Drop -  Date</label>
-                <label className="headers" style={{fontSize:'17px',color:'black'}}>10th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'17px',color:'black'}}>{this.state.date}</label>
               </Form.Field>
 
 

@@ -3,6 +3,23 @@ import {Input,Modal,Icon,Image, Header, Divider, Grid,Segment,Button,Form} from 
 
 export default class RetailerSummary extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 2;
+     var day = today.getDate() ;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -24,7 +41,7 @@ export default class RetailerSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>Global Fashion Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>Global Food Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -36,12 +53,7 @@ export default class RetailerSummary extends React.Component
                 <label >Store (Drop) Location</label>
                 <label className="headers" style={{fontSize:'20px'}}>Miami, FL</label>
               </Form.Field>
-              <br/>
 
-              <Form.Field>
-                <label >Current Temparature</label>
-                <label className="headers" style={{fontSize:'20px'}}>42°F</label>
-              </Form.Field>
 
               </Form>
             </Grid.Column>
@@ -56,7 +68,7 @@ export default class RetailerSummary extends React.Component
               <br/>
               <Form.Field>
                 <label >Store Receiving -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>10th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>{this.state.date}</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -64,21 +76,16 @@ export default class RetailerSummary extends React.Component
                 <label className="headers" style={{fontSize:'20px'}}>3:40:00 PM</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Wash</label>
-                <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
-              </Form.Field>
-              <br/>
 
               <Form.Field>
-                <label >Iron</label>
-                <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
+                <label >Current Temparature</label>
+                <label className="headers" style={{fontSize:'20px'}}>42°F</label>
               </Form.Field>
-              <br/>
+
 
               <Form.Field>
                 <label >Current Humidity</label>
-                <label className="headers" style={{fontSize:'20px'}}>68</label>
+                <label className="headers" style={{fontSize:'20px'}}>68 %</label>
               </Form.Field>
               </Form>
             </Grid.Column>

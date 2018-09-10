@@ -3,6 +3,23 @@ import {Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 
 
 export default class LogisticsInfo extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 3;
+     var day = today.getDate() - 4;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -22,19 +39,19 @@ export default class LogisticsInfo extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Shipment ID (Outlet - DC)</label>
+              <label >Shipment ID (Bakery - DC)</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>SHIP275</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>The Apparel Logistics Group</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Fine Foods Logistics</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
-              <label >Outlet (Pick-up) Location</label>
+              <label >Bakery (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>
@@ -49,11 +66,7 @@ export default class LogisticsInfo extends React.Component
               <label >Vehicle</label>
               <input defaultValue="CTF 276H"/>
             </Form.Field>
-            <br/>
-            <Form.Field>
-              <label >Current Humidity</label>
-              <Input focus="focus" placeholder='Product Name' defaultValue='62'/>
-            </Form.Field>
+
 
           </Form>
           </Grid.Column>
@@ -63,18 +76,18 @@ export default class LogisticsInfo extends React.Component
           <Form>
 
           <Form.Field>
-            <label >Outlet Pick-up - Date </label>
-            <input type='date' value="2018-01-07"/>
+            <label >Bakery Pick-up - Date </label>
+            <input type='date' value={this.state.date}/>
           </Form.Field>
 
             <Form.Field>
-              <label >Outlet Pick-up - Time</label>
+              <label >Bakery Pick-up - Time</label>
               <input defaultValue="10:30:00 PM" />
             </Form.Field>
 
             <Form.Field>
               <label >DC Drop -  Date </label>
-              <input type='date' value="2018-01-08"/>
+              <input type='date' value={this.state.date1}/>
             </Form.Field>
 
             <Form.Field>
@@ -83,23 +96,14 @@ export default class LogisticsInfo extends React.Component
             </Form.Field>
 
             <Form.Field>
-              <label >Wash</label>
-              <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
+              <label >Current Humidity</label>
+              <Input focus="focus" placeholder='Product Name' defaultValue='62 %'/>
             </Form.Field>
-            <br/>
 
             <Form.Field>
-              <label >Iron</label>
-              <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
+              <label >Current Temparature</label>
+              <Input focus="focus" placeholder='Product Name' defaultValue='59 °F'/>
             </Form.Field>
-
-            <br/>
-            <Form.Field>
-              <label >Current Temperature</label>
-              <Input focus="focus" placeholder='Product Name' defaultValue='59°F'/>
-            </Form.Field>
-
-
           </Form>
           </Grid.Column>
         </Grid.Row>

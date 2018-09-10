@@ -3,6 +3,20 @@ import {Image, Header, Divider, Grid,Segment,Button,Form} from 'semantic-ui-reac
 
 export default class BakerInfoPreview extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day = today.getDate() - 5 ;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -16,17 +30,17 @@ export default class BakerInfoPreview extends React.Component
 
                 <Form.Field>
                   <label >Product Brand Name</label>
-                  <label className="headers" style={{fontSize:'20px'}}>HB T-Shirt</label>
+                  <label className="headers" style={{fontSize:'20px'}}>HB Bread</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
-                  <label >Assembled In</label>
+                  <label >Manufactured In</label>
                   <label className="headers" style={{fontSize:'20px'}}>Princeton, NJ</label>
                 </Form.Field>
                 <br/>
 
                 <Form.Field>
-                  <label >Assembled Address</label>
+                  <label >Manufactured Address</label>
                   <label className="headers" style={{fontSize:'20px'}}>100, ABC Street, 08540</label>
                 </Form.Field>
                 <br/>
@@ -40,13 +54,13 @@ export default class BakerInfoPreview extends React.Component
 
                 <Form.Field>
                   <label >Packaged Date</label>
-                  <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                  <label className="headers" style={{fontSize:'20px'}}>{this.state.date}</label>
                 </Form.Field>
 
                 <br/>
                 <Form.Field>
                   <label >Manufactured Date</label>
-                  <label className="headers" style={{fontSize:'20px'}}>10th Dec, 2017</label>
+                  <label className="headers" style={{fontSize:'20px'}}>{this.state.date}</label>
                 </Form.Field>
 
               </Form>
@@ -59,21 +73,11 @@ export default class BakerInfoPreview extends React.Component
 
             <Form.Field>
               <label >Net Quantity</label>
-              <label className="headers" style={{fontSize:'20px'}}>1500 Pieces</label>
+              <label className="headers" style={{fontSize:'20px'}}>150 Loafs</label>
             </Form.Field>
             <br/>
 
-            <Form.Field>
-              <label >Wash</label>
-              <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
-            </Form.Field>
-            <br/>
 
-            <Form.Field>
-              <label >Iron</label>
-              <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
-            </Form.Field>
-            <br/>
 
             <Form.Field>
               <label >Current Temparature</label>
@@ -83,7 +87,7 @@ export default class BakerInfoPreview extends React.Component
 
             <Form.Field>
               <label >Current Humidity</label>
-              <label className="headers" style={{fontSize:'20px'}}>54</label>
+              <label className="headers" style={{fontSize:'20px'}}>54 %</label>
             </Form.Field>
             <br/>
 

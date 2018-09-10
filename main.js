@@ -8,7 +8,7 @@ import MainLandingPage from './client/components/BlockChain.jsx'
 import CreateInfo from './client/components/createInfo.jsx'
 import DashBoard from './client/views/dashBoard.jsx';
 import ProductInfo from './client/views/productInfo.jsx';
-import Baker from './client/views/Baker.jsx';
+import Baker from './client/views/BakerCopy.jsx';
 import BakerInfo from './client/views/bakerInfo.jsx';
 import LogisticssPartner1 from './client/views/logisticsPartner1.jsx';
 import LogisticssPartner2 from './client/views/logisticsPartner2.jsx';

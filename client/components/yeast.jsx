@@ -69,7 +69,7 @@ export default class Yeast extends React.Component
                 <Form>
                 <Form.Field>
                   <label >Packing Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th June, 2017</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th June, 2018</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>

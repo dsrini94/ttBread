@@ -3,6 +3,23 @@ import {Divider,Form,Segment, Grid, Card, Icon, Image,Header,Button,Input} from 
 
 export default class IdcSummary extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 3;
+     var day = today.getDate() - 4;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -22,19 +39,19 @@ export default class IdcSummary extends React.Component
             </Form.Field>
             <br/>
             <Form.Field>
-              <label >Shipment ID (Outlet - DC)</label>
+              <label >Shipment ID (Bakery - DC)</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>SHIP275</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
               <label >Logistics Partner Name</label>
-              <label className="headers" style={{fontSize:'20px',color:'black'}}>The Apparel Logistics Group</label>
+              <label className="headers" style={{fontSize:'20px',color:'black'}}>Fine Foods Logistics</label>
             </Form.Field>
             <br/>
 
             <Form.Field>
-              <label >Outlet (Pick-up) Location</label>
+              <label >Bakery (Pick-up) Location</label>
               <label className="headers" style={{fontSize:'20px',color:'black'}}>Princeton, NJ</label>
             </Form.Field>
             <br/>
@@ -65,7 +82,7 @@ export default class IdcSummary extends React.Component
           <br/>
           <Form.Field>
             <label >DC Receiving -  Date </label>
-            <label className="headers" style={{fontSize:'20px',color:'black'}}>8th Jan 2018</label>
+            <label className="headers" style={{fontSize:'20px',color:'black'}}>{this.state.date1}</label>
           </Form.Field>
           <br/>
 

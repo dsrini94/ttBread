@@ -18,7 +18,7 @@ export default class Baker extends React.Component
                 margin:'0px',
                 border:'none'
               }}>
-              <span className="headers">Manufacturer</span>
+              <span className="headers">Baker</span>
             </Header>
           </Segment>
           </Grid.Column>

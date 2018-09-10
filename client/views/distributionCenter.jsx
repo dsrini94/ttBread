@@ -39,8 +39,8 @@ export default class DistributionCenter extends React.Component
         </center>
         <div style={{marginLeft:'25px'}}>
         <span>Product Route :</span><br/>
-          <span>7th Jan 2018,Sun  |Manufacturer| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
-          <span>7th Jan 2018,Sun  |The Apparel Logistics Group| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
+          <span>7th Jan 2018,Sun  |Baker| 1K31KZXjcoxhXpRyjH9g5NxFSJIPi2zEXb</span><br/><br/>
+          <span>7th Jan 2018,Sun  |Fine Foods Logistics| 3QJmV3qfvL4SuXo34YihAf3sRCW3qSipgC</span><br/><br/>
           <span>7th Jan 2018,Sun  |Distribution Centre| 3LifsmHu5HTmvcR8tow13fVfBSFW1s4mrP</span><br/>
           </div>
           </div>

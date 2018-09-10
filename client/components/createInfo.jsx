@@ -65,6 +65,7 @@ export default class CreateInfo extends React.Component {
       activeItem: 'create',
       activeItem2: 'bread',
       textValue:'',
+      date:'',
       ingredients: [
         {
           key: 'br',
@@ -93,7 +94,17 @@ export default class CreateInfo extends React.Component {
     alert(value);
   }
 
+  componentDidMount(){
+     var today = new Date();
+     var day = today.getDate() - 5 ;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2)});
+ }
+
   render() {
+
+    console.log("===",this.state.date);
+
+
     var value = this.state
     return (<div>
       <Grid style={{
@@ -105,8 +116,8 @@ export default class CreateInfo extends React.Component {
             <br/>
             <Header as='h2'>
               <span className="headers" style={{
-                  color: '#676b72'
-                }}>T-Shirt Information</span>
+                  color: '#c1b945'
+                }}>Bread Information</span>
             </Header>
             <center></center>
           </Grid.Column>
@@ -118,16 +129,16 @@ export default class CreateInfo extends React.Component {
             <Form>
               <Form.Field>
                 <label >Product Name</label>
-                <Input focus="focus" placeholder='Product Name' defaultValue='HB T-Shirt'/>
+                <Input focus="focus" placeholder='Product Name' defaultValue='HB Bread'/>
               </Form.Field>
 
               <Form.Field>
-                <label >Assembled In</label>
+                <label >Manufactured In</label>
                 <Input focus="focus" placeholder='Product Name' defaultValue='Princeton, NJ'/>
               </Form.Field>
 
               <Form.Field>
-                <label >Assembled Address</label>
+                <label >Manufactured Address</label>
                 <Input focus="focus" placeholder='Product Name' defaultValue='100, ABC Street, 08540'/>
               </Form.Field>
 
@@ -137,17 +148,19 @@ export default class CreateInfo extends React.Component {
                 <label >Ingredients</label>
                 <List>
                   <List.Item onClick={this.handleModal.bind(this,'ING3477488')}>
-                    <Image avatar="avatar" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfIw-gtF9AJD_t64cgOkgjcWZ_zP16JHpDu9rRYLfs65QEZhLg'/>
-                    <List.Content>
-                      <List.Header>Polyester</List.Header>
+                    <Image avatar="avatar" src='./../../images/yeast.jpg'/>
+                    <List.Content style={{marginTop:6}}>
+                      <List.Header>Yeast</List.Header>
                     </List.Content>
                   </List.Item>
-                  <List.Item onClick={this.handleModal.bind(this,'ING1225665')}>
-                    <Image avatar="avatar" src='https://media.istockphoto.com/vectors/cotton-blossom-illustration-vector-id911801478?k=6&m=911801478&s=612x612&w=0&h=ybTF5ZxJQgKFALuWKTH6r33xiiMffZ6HPWo6NmUarFM='/>
-                    <List.Content>
-                      <List.Header>Cotton</List.Header>
+
+                  <List.Item onClick={this.handleModal.bind(this,'ING3477488')}>
+                    <Image avatar="avatar" src='./../../images/wheat.jpg'/>
+                    <List.Content style={{marginTop:6}}>
+                      <List.Header>Wheat</List.Header>
                     </List.Content>
                   </List.Item>
+
                 </List>
               </Form.Field>
 
@@ -158,17 +171,17 @@ export default class CreateInfo extends React.Component {
 
               <Form.Field>
                 <label >Manufactured Date</label>
-                <input type='date' value="2017-10-07"/>
+                <input type='date' value={this.state.date}/>
               </Form.Field>
 
               <Form.Field>
                 <label >Packaged Date</label>
-                <input type='date' value="2018-01-07"/>
+                <input type='date' value={this.state.date}/>
               </Form.Field>
 
               <Form.Field>
                 <label >Net Quantity</label>
-                <input defaultValue="1500 Pieces"/>
+                <input defaultValue="150 loafs"/>
               </Form.Field>
 
               <Form.Field>
@@ -178,7 +191,7 @@ export default class CreateInfo extends React.Component {
 
               <Form.Field>
                 <label >Current Humidity</label>
-                <Input focus="focus" placeholder='Product Name' defaultValue='54 '/>
+                <Input focus="focus" placeholder='Product Name' defaultValue='54 %'/>
               </Form.Field>
 
             </Form>

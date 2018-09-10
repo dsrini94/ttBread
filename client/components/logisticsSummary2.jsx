@@ -3,6 +3,23 @@ import {Input,Modal,Icon,Image, Header, Divider, Grid,Segment,Button,Form} from 
 
 export default class LogisticssSummary2 extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 2;
+     var day = today.getDate() ;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -24,7 +41,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>Global Fashion Logistics</label>
+                <label className="headers" style={{fontSize:'20px'}}>Global Food Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -56,7 +73,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >DC Pick-up - Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>8th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>{this.state.date1}</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -66,7 +83,7 @@ export default class LogisticssSummary2 extends React.Component
               <br/>
               <Form.Field>
                 <label >Store Drop -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>10th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>{this.state.date}</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -77,7 +94,7 @@ export default class LogisticssSummary2 extends React.Component
 
               <Form.Field>
                 <label >Current Humidity</label>
-                <label className="headers" style={{fontSize:'20px'}}>56</label>
+                <label className="headers" style={{fontSize:'20px'}}>56 %</label>
               </Form.Field>
               </Form>
             </Grid.Column>

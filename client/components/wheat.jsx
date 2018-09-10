@@ -24,7 +24,7 @@ export default class Wheat extends React.Component
       <Accordion styled fluid>
         <Accordion.Title active={this.state.activeIndex === 0} index={0} onClick={this.handleClick.bind(this)}>
           <Icon name='dropdown' />
-          Cotton
+          Wheat
         </Accordion.Title>
         <Accordion.Content active={this.state.activeIndex === 0} >
           <Grid>
@@ -51,8 +51,8 @@ export default class Wheat extends React.Component
                 </Form.Field>
                 <br/>
                 <Form.Field>
-                  <label >Cotton Type</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>SHANKER-6 R/G</label>
+                  <label >Wheat Type</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>Hard winter red wheat:</label>
                 </Form.Field>
                 <br/>
 
@@ -62,12 +62,12 @@ export default class Wheat extends React.Component
                 <Form>
                 <Form.Field>
                   <label >Packing Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th Sep, 2017</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>10th March, 2018</label>
                 </Form.Field>
                 <br/>
                 <Form.Field>
                   <label >Harvest Date</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>15th Aug, 2017</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>25th Feb, 2018</label>
                 </Form.Field>
                 {
                 //   <Form.Field>
@@ -81,7 +81,7 @@ export default class Wheat extends React.Component
                 <Form>
                 <Form.Field>
                   <label>Product Name</label>
-                  <label className="headers" style={{fontSize:'17px',color:'black'}}>Chino</label>
+                  <label className="headers" style={{fontSize:'17px',color:'black'}}>BB Royal Organic</label>
                 </Form.Field>
                 <br/>
 

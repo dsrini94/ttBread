@@ -3,6 +3,23 @@ import {Input,Modal,Icon,Image, Header, Divider, Grid,Segment,Button,Form} from 
 
 export default class LogisticssSummary extends React.Component
 {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      date:'',
+      date1:''
+    }
+  }
+
+  componentDidMount(){
+     var today = new Date();
+     var day1 = today.getDate() - 3;
+     var day = today.getDate() - 4;
+     this.setState({date:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day).slice(-2),
+                    date1:today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + day1).slice(-2)});
+ }
+
   render()
   {
     return(
@@ -18,17 +35,17 @@ export default class LogisticssSummary extends React.Component
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Shipment ID (Outlet - DC)</label>
+                <label >Shipment ID (Bakery - DC)</label>
                 <label className="headers" style={{fontSize:'20px'}}>SHIP275</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >Logistics Partner Name</label>
-                <label className="headers" style={{fontSize:'20px'}}>The Apparel Logistics Group</label>
+                <label className="headers" style={{fontSize:'20px'}}>Fine Foods Logistics</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Outlet (Pick-up) Location</label>
+                <label >Bakery (Pick-up) Location</label>
                 <label className="headers" style={{fontSize:'20px'}}>Princeton, NJ</label>
               </Form.Field>
               <br/>
@@ -43,10 +60,7 @@ export default class LogisticssSummary extends React.Component
               </Form.Field>
               <br/>
 
-              <Form.Field>
-                <label >Current Humidity</label>
-                <label className="headers" style={{fontSize:'20px'}}>62</label>
-              </Form.Field>
+
 
               </Form>
             </Grid.Column>
@@ -55,18 +69,18 @@ export default class LogisticssSummary extends React.Component
               <br/>
               <br/>
               <Form.Field>
-                <label >Outlet Pick-up - Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>7th Jan, 2018</label>
+                <label >Bakery Pick-up - Date </label>
+                <label className="headers" style={{fontSize:'20px'}}>{this.state.date}</label>
               </Form.Field>
               <br/>
               <Form.Field>
-                <label >Outlet Pick-up - Time</label>
+                <label >Bakery Pick-up - Time</label>
                 <label className="headers" style={{fontSize:'20px'}}>10:30:00 PM</label>
               </Form.Field>
               <br/>
               <Form.Field>
                 <label >DC Drop -  Date </label>
-                <label className="headers" style={{fontSize:'20px'}}>8th Jan, 2018</label>
+                <label className="headers" style={{fontSize:'20px'}}>{this.state.date1}</label>
               </Form.Field>
               <br/>
               <Form.Field>
@@ -74,18 +88,13 @@ export default class LogisticssSummary extends React.Component
                 <label className="headers" style={{fontSize:'20px'}}>10:30:00 AM</label>
               </Form.Field>
               <br/>
-              <Form.Field>
-                <label >Wash</label>
-                <label className="headers" style={{fontSize:'20px'}}>Gentle Wash</label>
-              </Form.Field>
-              <br/>
 
               <Form.Field>
-                <label >Iron</label>
-                <label className="headers" style={{fontSize:'20px'}}>Medium Iron</label>
+                <label >Current Humidity</label>
+                <label className="headers" style={{fontSize:'20px'}}>62 %</label>
               </Form.Field>
-              <br/>
 
+              <br/>
               <Form.Field>
                 <label >Current Temparature</label>
                 <label className="headers" style={{fontSize:'20px'}}>59°F</label>
