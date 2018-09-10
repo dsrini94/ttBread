@@ -12,7 +12,8 @@ export default class DashBoard extends React.Component {
         backgroundRepeat: 'no-repeat',
         height:window.innerHeight
       }}>
-
+      <img src="./../../images/usfoodsLogo.png" style={{position:'absolute',top:'2%',left:'2%',height:100}}/>
+      <Header as='h1' style={{marginTop:window.innerHeight/15,textAlign:'center',marginBottom:'20px',fontSize:50,textTransform:'uppercase',letterSpacing:'8px'}}><span className='headers'>Track and trace</span></Header>
       <Header as='h1' style={{marginTop:window.innerHeight/5,textAlign:'center',marginBottom:'20px'}}><span className='headers'>Select your Role</span></Header>
       <div >
       <Grid style={{width:window.innerWidth, margin:'0px auto'}}>
